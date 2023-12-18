@@ -1,0 +1,1378 @@
+data:<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, viewport-fit=cover" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta http-equiv="Content-Securiy-Policy" content="script-src 'self'" />
+    <link rel="icon" href="https://d1ss45t6zb3sdy.cloudfront.net/talkie-h5/assets/talkie-icon.svg" />
+    <link rel="preconnect" href="https://d1ss45t6zb3sdy.cloudfront.net/" crossorigin />
+    <link rel="dns-prefetch" href="https://d1ss45t6zb3sdy.cloudfront.net/" />
+    
+    <title>Talkie</title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="Become anyone that you can dream of and meet anything that you can imagine" />
+    <meta property="og:title" content="Talkie" />
+    <meta property="og:description" content="Become anyone that you can dream of and meet anything that you can imagine" />
+    <meta property="og:url" content="https://talkie-ai.com/" />
+    <meta property="og:site_name" content="Talkie" />
+    <meta property="og:locale" content="en_US" />
+    <script>
+      // pc/h5 redirect
+      if (!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+        if (window.location.pathname === '/' || window.location.pathname === '/referral') {
+          if (window.location.hostname.includes('test')) { 
+            window.location.replace(location.href.replace(location.origin, 'https://www-talkie-test.xaminim.com'));
+          } else {
+            window.location.replace(location.href.replace(location.origin, 'https://www.talkie-ai.com'));
+          }
+        }
+      }
+    </script>
+    <style>
+      html,body,.app {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        background-color: #1C1D20;
+      }
+      @media screen and (max-width: 320px) {
+        html{
+          font-size: 32px;
+        }
+        body{
+          min-width: 320px;
+        }
+      }
+      @media screen and (min-width: 750px) {
+        html{
+          font-size: 75px;
+        }
+        body{
+          max-width: 750px;
+          margin: 0 auto !important;
+        }
+      }
+    </style>
+    <script>
+      (function () {
+        var timer = null;
+        function onResize() {
+          var width = Math.min(document.documentElement.clientWidth, 750);
+          var e = width / 7.5;
+          document.documentElement.style.fontSize = e + 'px';
+        }
+        window.addEventListener('resize', function() {
+          if (timer) clearTimeout(timer);
+          timer = setTimeout(onResize, 100);
+        });
+        onResize();
+      })();
+    </script>
+    <!-- <script>
+    !function (w, d, t) {
+      w.TiktokAnalyticsObject=t;var ttq=w[t]=w[t]||[];ttq.methods=["page","track","identify","instances","debug","on","off","once","ready","alias","group","enableCookie","disableCookie"],ttq.setAndDefer=function(t,e){t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}};for(var i=0;i<ttq.methods.length;i++)ttq.setAndDefer(ttq,ttq.methods[i]);ttq.instance=function(t){for(var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n]);return e},ttq.load=function(e,n){var i="https://analytics.tiktok.com/i18n/pixel/events.js";ttq._i=ttq._i||{},ttq._i[e]=[],ttq._i[e]._u=i,ttq._t=ttq._t||{},ttq._t[e]=+new Date,ttq._o=ttq._o||{},ttq._o[e]=n||{};var o=document.createElement("script");o.type="text/javascript",o.async=!0,o.src=i+"?sdkid="+e+"&lib="+t;var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(o,a)};
+    
+      ttq.load('CL0FKKRC77U0CK80987G');
+      ttq.page();
+    }(window, document, 'ttq');
+    </script> -->
+    <script type="module" crossorigin src="https://d1ss45t6zb3sdy.cloudfront.net/talkie-h5/assets/index-a5357787.js"></script>
+    <link rel="modulepreload" crossorigin href="https://d1ss45t6zb3sdy.cloudfront.net/talkie-h5/assets/swiper-4c96ce63.js">
+    <link rel="modulepreload" crossorigin href="https://d1ss45t6zb3sdy.cloudfront.net/talkie-h5/assets/firebase-a6716bba.js">
+    <link rel="stylesheet" href="https://d1ss45t6zb3sdy.cloudfront.net/talkie-h5/assets/index-24118e29.css">
+    <script type="module">try{import.meta.url;import("_").catch(()=>1);}catch(e){}window.__vite_is_modern_browser=true;</script>
+    <script type="module">!function(){if(window.__vite_is_modern_browser)return;console.warn("vite: loading legacy build because dynamic import or import.meta.url is unsupported, syntax error above should be ignored");var e=document.getElementById("vite-legacy-polyfill"),n=document.createElement("script");n.src=e.src,n.onload=function(){System.import(document.getElementById('vite-legacy-entry').getAttribute('data-src'))},document.body.appendChild(n)}();</script>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="app"></div>
+    
+    <script nomodule>!function(){var e=document,t=e.createElement("script");if(!("noModule"in t)&&"onbeforeload"in t){var n=!1;e.addEventListener("beforeload",(function(e){if(e.target===t)n=!0;else if(!e.target.hasAttribute("nomodule")||!n)return;e.preventDefault()}),!0),t.type="module",t.src=".",e.head.appendChild(t),t.remove()}}();</script>
+    <script nomodule crossorigin id="vite-legacy-polyfill" src="https://d1ss45t6zb3sdy.cloudfront.net/talkie-h5/assets/polyfills-legacy.41a4bc7e.js"></script>
+    <script nomodule crossorigin id="vite-legacy-entry" data-src="https://d1ss45t6zb3sdy.cloudfront.net/talkie-h5/assets/index-legacy.bd841a46.js">System.import(document.getElementById('vite-legacy-entry').getAttribute('data-src'))</script>
+  </body>
+</html>
+data:<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML><HEAD><META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<TITLE>ERROR: The request could not be satisfied</TITLE>
+</HEAD><BODY>
+<H1>403 ERROR</H1>
+<H2>The request could not be satisfied.</H2>
+<HR noshade size="1px">
+Bad request.
+We can't connect to the server for this app or website at this time. There might be too much traffic or a configuration error. Try again later, or contact the app or website owner.
+<BR clear="all">
+If you provide content to customers through CloudFront, you can find steps to troubleshoot and help prevent this error by reviewing the CloudFront documentation.
+<BR clear="all">
+<HR noshade size="1px">
+<PRE>
+Generated by cloudfront (CloudFront)
+Request ID: 8SLAwCtxJv_xJf598cO71WEIKpa3Mc1dpUfihONiXpDTUD0hR7L-cA==
+</PRE>
+<ADDRESS>
+</ADDRESS>
+</BODY></HTML>
+data:<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="shortcut icon" href="https://angel.ai/wp-content/uploads/2023/05/favicon.png"/>
+<link rel="profile" href="http://gmpg.org/xfn/11">
+<link rel="pingback" href="https://angel.ai/xmlrpc.php">
+<meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+
+	<!-- This site is optimized with the Yoast SEO plugin v20.8 - https://yoast.com/wordpress/plugins/seo/ -->
+	<title>Amber - Angel AI</title>
+	<link rel="canonical" href="https://angel.ai/amber/" />
+	<meta property="og:locale" content="en_US" />
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content="Amber - Angel AI" />
+	<meta property="og:url" content="https://angel.ai/amber/" />
+	<meta property="og:site_name" content="Angel AI" />
+	<meta property="article:modified_time" content="2023-11-17T07:54:16+00:00" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:label1" content="Est. reading time" />
+	<meta name="twitter:data1" content="6 minutes" />
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"https://angel.ai/amber/","url":"https://angel.ai/amber/","name":"Amber - Angel AI","isPartOf":{"@id":"https://angel.ai/#website"},"datePublished":"2023-09-28T06:22:06+00:00","dateModified":"2023-11-17T07:54:16+00:00","breadcrumb":{"@id":"https://angel.ai/amber/#breadcrumb"},"inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https://angel.ai/amber/"]}]},{"@type":"BreadcrumbList","@id":"https://angel.ai/amber/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://angel.ai/"},{"@type":"ListItem","position":2,"name":"Amber"}]},{"@type":"WebSite","@id":"https://angel.ai/#website","url":"https://angel.ai/","name":"Angel AI","description":"Your Friendly AI Chatbot Assistant","publisher":{"@id":"https://angel.ai/#organization"},"potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://angel.ai/?s={search_term_string}"},"query-input":"required name=search_term_string"}],"inLanguage":"en-US"},{"@type":"Organization","@id":"https://angel.ai/#organization","name":"Coach Co","url":"https://angel.ai/","logo":{"@type":"ImageObject","inLanguage":"en-US","@id":"https://angel.ai/#/schema/logo/image/","url":"https://angel.ai/wp-content/uploads/2023/05/angel_logo.png","contentUrl":"https://angel.ai/wp-content/uploads/2023/05/angel_logo.png","width":2300,"height":600,"caption":"Coach Co"},"image":{"@id":"https://angel.ai/#/schema/logo/image/"}}]}</script>
+	<!-- / Yoast SEO plugin. -->
+
+
+
+<script>
+dataLayer = [{"title":"Amber","author":"Administrador","wordcount":2973,"logged_in":"false","page_id":912,"post_date":"2023-09-28 06:22:06","post_type":"page"}];
+</script>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-TF223TR');</script>
+<!-- End Google Tag Manager --><link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel="alternate" type="application/rss+xml" title="Angel AI &raquo; Feed" href="https://angel.ai/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Angel AI &raquo; Comments Feed" href="https://angel.ai/comments/feed/" />
+<script type="text/javascript">
+/* <![CDATA[ */
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/angel.ai\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.4.2"}};
+/*! This file is auto-generated */
+!function(i,n){var o,s,e;function c(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(o,JSON.stringify(t))}catch(e){}}function p(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data),r=(e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0),new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data));return t.every(function(e,t){return e===r[t]})}function u(e,t,n){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\uddfa\ud83c\uddf3","\ud83c\uddfa\u200b\ud83c\uddf3")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!n(e,"\ud83e\udef1\ud83c\udffb\u200d\ud83e\udef2\ud83c\udfff","\ud83e\udef1\ud83c\udffb\u200b\ud83e\udef2\ud83c\udfff")}return!1}function f(e,t,n){var r="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):i.createElement("canvas"),a=r.getContext("2d",{willReadFrequently:!0}),o=(a.textBaseline="top",a.font="600 32px Arial",{});return e.forEach(function(e){o[e]=t(a,e,n)}),o}function t(e){var t=i.createElement("script");t.src=e,t.defer=!0,i.head.appendChild(t)}"undefined"!=typeof Promise&&(o="wpEmojiSettingsSupports",s=["flag","emoji"],n.supports={everything:!0,everythingExceptFlag:!0},e=new Promise(function(e){i.addEventListener("DOMContentLoaded",e,{once:!0})}),new Promise(function(t){var n=function(){try{var e=JSON.parse(sessionStorage.getItem(o));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+f.toString()+"("+[JSON.stringify(s),u.toString(),p.toString()].join(",")+"));",r=new Blob([e],{type:"text/javascript"}),a=new Worker(URL.createObjectURL(r),{name:"wpTestEmojiSupports"});return void(a.onmessage=function(e){c(n=e.data),a.terminate(),t(n)})}catch(e){}c(n=f(s,u,p))}t(n)}).then(function(e){for(var t in e)n.supports[t]=e[t],n.supports.everything=n.supports.everything&&n.supports[t],"flag"!==t&&(n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&n.supports[t]);n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&!n.supports.flag,n.DOMReady=!1,n.readyCallback=function(){n.DOMReady=!0}}).then(function(){return e}).then(function(){var e;n.supports.everything||(n.readyCallback(),(e=n.source||{}).concatemoji?t(e.concatemoji):e.wpemoji&&e.twemoji&&(t(e.twemoji),t(e.wpemoji)))}))}((window,document),window._wpemojiSettings);
+/* ]]> */
+</script>
+<style id='wp-emoji-styles-inline-css' type='text/css'>
+
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+</style>
+<link rel='stylesheet' id='wp-block-library-css' href='https://angel.ai/wp-includes/css/dist/block-library/style.min.css?ver=6.4.2' type='text/css' media='all' />
+<style id='classic-theme-styles-inline-css' type='text/css'>
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+</style>
+<style id='global-styles-inline-css' type='text/css'>
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}body .is-layout-flex{flex-wrap: wrap;align-items: center;}body .is-layout-flex > *{margin: 0;}body .is-layout-grid{display: grid;}body .is-layout-grid > *{margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+.wp-block-navigation a:where(:not(.wp-element-button)){color: inherit;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+.wp-block-pullquote{font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel='stylesheet' id='contact-form-7-css' href='https://angel.ai/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=5.8' type='text/css' media='all' />
+<link rel='stylesheet' id='cmplz-general-css' href='https://angel.ai/wp-content/plugins/complianz-gdpr/assets/css/cookieblocker.min.css?ver=6.4.6' type='text/css' media='all' />
+<link rel='stylesheet' id='cesis-style-css' href='https://angel.ai/wp-content/themes/cesis/style.css?ver=6.4.2' type='text/css' media='all' />
+<link rel='stylesheet' id='custom-style-css' href='https://angel.ai/wp-content/themes/cesis/css/cesis_media_queries.css?ver=6.4.2' type='text/css' media='all' />
+<link rel='stylesheet' id='cesis-plugins-css' href='https://angel.ai/wp-content/themes/cesis/css/cesis_plugins.css?ver=6.4.2' type='text/css' media='all' />
+<link rel='stylesheet' id='cesis-icons-css' href='https://angel.ai/wp-content/themes/cesis/includes/fonts/cesis_icons/cesis_icons.css?ver=6.4.2' type='text/css' media='all' />
+<link rel='stylesheet' id='cesis-fonts-css' href='https://fonts.googleapis.com/css?family=Poppins%3A400%2C500%2C600%2C70%7COpen+Sans%3A300%2C400%2C600%2C700%7CRoboto%3A400%2C500%2C700%2C900&#038;subset=latin%2Clatin-ext' type='text/css' media='all' />
+<link rel='stylesheet' id='dynamic-css-css' href='https://angel.ai/wp-admin/admin-ajax.php?action=dynamic_css&#038;ver=6.4.2' type='text/css' media='all' />
+<link rel='stylesheet' id='js_composer_front-css' href='https://angel.ai/wp-content/plugins/js_composer/assets/css/js_composer.min.css?ver=6.11.0' type='text/css' media='all' />
+<link rel='stylesheet' id='the-grid-css' href='https://angel.ai/wp-content/plugins/the-grid/frontend/assets/css/the-grid.min.css?ver=2.7.9.1' type='text/css' media='all' />
+<style id='the-grid-inline-css' type='text/css'>
+.tolb-holder{background:rgba(0,0,0,0.8)}.tolb-holder .tolb-close,.tolb-holder .tolb-title,.tolb-holder .tolb-counter,.tolb-holder .tolb-next i,.tolb-holder .tolb-prev i{color:#ffffff}.tolb-holder .tolb-load{border-color:rgba(255,255,255,0.2);border-left:3px solid #ffffff}
+.to-heart-icon,.to-heart-icon svg,.to-post-like,.to-post-like .to-like-count{position:relative;display:inline-block}.to-post-like{width:auto;cursor:pointer;font-weight:400}.to-heart-icon{float:left;margin:0 4px 0 0}.to-heart-icon svg{overflow:visible;width:15px;height:14px}.to-heart-icon g{-webkit-transform:scale(1);transform:scale(1)}.to-heart-icon path{-webkit-transform:scale(1);transform:scale(1);transition:fill .4s ease,stroke .4s ease}.no-liked .to-heart-icon path{fill:#999;stroke:#999}.empty-heart .to-heart-icon path{fill:transparent!important;stroke:#999}.liked .to-heart-icon path,.to-heart-icon svg:hover path{fill:#ff6863!important;stroke:#ff6863!important}@keyframes heartBeat{0%{transform:scale(1)}20%{transform:scale(.8)}30%{transform:scale(.95)}45%{transform:scale(.75)}50%{transform:scale(.85)}100%{transform:scale(.9)}}@-webkit-keyframes heartBeat{0%,100%,50%{-webkit-transform:scale(1)}20%{-webkit-transform:scale(.8)}30%{-webkit-transform:scale(.95)}45%{-webkit-transform:scale(.75)}}.heart-pulse g{-webkit-animation-name:heartBeat;animation-name:heartBeat;-webkit-animation-duration:1s;animation-duration:1s;-webkit-animation-iteration-count:infinite;animation-iteration-count:infinite;-webkit-transform-origin:50% 50%;transform-origin:50% 50%}.to-post-like a{color:inherit!important;fill:inherit!important;stroke:inherit!important}
+</style>
+<link rel='stylesheet' id='redux-field-dev-icnselect-cesis_social_icons-font-end-css' href='https://angel.ai/wp-content/themes/cesis/admin/redux-extensions/extensions/dev_iconselect/dev_iconselect/include/fontawesome/css/font-awesome-social.css?ver=6.4.2' type='text/css' media='all' />
+<link rel='stylesheet' id='redux-field-dev-icnselect-cesis_staff_social-font-end-css' href='https://angel.ai/wp-content/themes/cesis/admin/redux-extensions/extensions/dev_iconselect/dev_iconselect/include/fontawesome/css/font-awesome-social.css?ver=6.4.2' type='text/css' media='all' />
+<link rel='stylesheet' id='redux-google-fonts-cesis_data-css' href='https://fonts.googleapis.com/css?family=Poppins%3A400%2C500%2C700%2C600%7CRoboto+Slab%3A300%7CRoboto%3A400%2C500%2C700&#038;ver=6.4.2' type='text/css' media='all' />
+<script type="text/javascript" src="https://angel.ai/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
+<script type="text/javascript" src="https://angel.ai/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
+<link rel="https://api.w.org/" href="https://angel.ai/wp-json/" /><link rel="alternate" type="application/json" href="https://angel.ai/wp-json/wp/v2/pages/912" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://angel.ai/xmlrpc.php?rsd" />
+<meta name="generator" content="WordPress 6.4.2" />
+<link rel='shortlink' href='https://angel.ai/?p=912' />
+<link rel="alternate" type="application/json+oembed" href="https://angel.ai/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fangel.ai%2Famber%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://angel.ai/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fangel.ai%2Famber%2F&#038;format=xml" />
+
+		<!-- GA Google Analytics @ https://m0n.co/ga -->
+		<script type="text/plain" data-service="google-analytics" data-category="statistics" async data-cmplz-src="https://www.googletagmanager.com/gtag/js?id=G-68X60WM2LX"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+			gtag('config', 'G-68X60WM2LX');
+		</script>
+
+	<style>.cmplz-hidden{display:none!important;}</style><meta name="generator" content="Powered by WPBakery Page Builder - drag and drop page builder for WordPress."/>
+<meta name="generator" content="Powered by Slider Revolution 6.6.13 - responsive, Mobile-Friendly Slider Plugin for WordPress with comfortable drag and drop interface." />
+<script>function setREVStartSize(e){
+			//window.requestAnimationFrame(function() {
+				window.RSIW = window.RSIW===undefined ? window.innerWidth : window.RSIW;
+				window.RSIH = window.RSIH===undefined ? window.innerHeight : window.RSIH;
+				try {
+					var pw = document.getElementById(e.c).parentNode.offsetWidth,
+						newh;
+					pw = pw===0 || isNaN(pw) || (e.l=="fullwidth" || e.layout=="fullwidth") ? window.RSIW : pw;
+					e.tabw = e.tabw===undefined ? 0 : parseInt(e.tabw);
+					e.thumbw = e.thumbw===undefined ? 0 : parseInt(e.thumbw);
+					e.tabh = e.tabh===undefined ? 0 : parseInt(e.tabh);
+					e.thumbh = e.thumbh===undefined ? 0 : parseInt(e.thumbh);
+					e.tabhide = e.tabhide===undefined ? 0 : parseInt(e.tabhide);
+					e.thumbhide = e.thumbhide===undefined ? 0 : parseInt(e.thumbhide);
+					e.mh = e.mh===undefined || e.mh=="" || e.mh==="auto" ? 0 : parseInt(e.mh,0);
+					if(e.layout==="fullscreen" || e.l==="fullscreen")
+						newh = Math.max(e.mh,window.RSIH);
+					else{
+						e.gw = Array.isArray(e.gw) ? e.gw : [e.gw];
+						for (var i in e.rl) if (e.gw[i]===undefined || e.gw[i]===0) e.gw[i] = e.gw[i-1];
+						e.gh = e.el===undefined || e.el==="" || (Array.isArray(e.el) && e.el.length==0)? e.gh : e.el;
+						e.gh = Array.isArray(e.gh) ? e.gh : [e.gh];
+						for (var i in e.rl) if (e.gh[i]===undefined || e.gh[i]===0) e.gh[i] = e.gh[i-1];
+											
+						var nl = new Array(e.rl.length),
+							ix = 0,
+							sl;
+						e.tabw = e.tabhide>=pw ? 0 : e.tabw;
+						e.thumbw = e.thumbhide>=pw ? 0 : e.thumbw;
+						e.tabh = e.tabhide>=pw ? 0 : e.tabh;
+						e.thumbh = e.thumbhide>=pw ? 0 : e.thumbh;
+						for (var i in e.rl) nl[i] = e.rl[i]<window.RSIW ? 0 : e.rl[i];
+						sl = nl[0];
+						for (var i in nl) if (sl>nl[i] && nl[i]>0) { sl = nl[i]; ix=i;}
+						var m = pw>(e.gw[ix]+e.tabw+e.thumbw) ? 1 : (pw-(e.tabw+e.thumbw)) / (e.gw[ix]);
+						newh =  (e.gh[ix] * m) + (e.tabh + e.thumbh);
+					}
+					var el = document.getElementById(e.c);
+					if (el!==null && el) el.style.height = newh+"px";
+					el = document.getElementById(e.c+"_wrapper");
+					if (el!==null && el) {
+						el.style.height = newh+"px";
+						el.style.display = "block";
+					}
+				} catch(e){
+					console.log("Failure at Presize of Slider:" + e)
+				}
+			//});
+		  };</script>
+<style type="text/css" data-type="vc_custom-css">.header_gb > .vc_column-inner{
+    background-position: top center !important;
+    background-size: 100% 160px!important;
+}
+
+@media only screen and (max-width: 721px) {
+    .two-columns .vc_column_container {
+        width: 50%!important;
+        display: inline-block!important;
+    }
+}</style><style type="text/css" data-type="vc_shortcodes-custom-css">.vc_custom_1692605650060{margin-top: 0px !important;margin-bottom: 0px !important;padding-top: 0px !important;padding-bottom: 0px !important;background-position: center;background-repeat: no-repeat;background-size:cover !important;}.vc_custom_1692608679987{margin-top: 0px !important;margin-bottom: 0px !important;padding-top: 0px !important;padding-bottom: 0px !important;background-position: 0 0;background-repeat:-repeat;}.vc_custom_1692605650060{margin-top: 0px !important;margin-bottom: 0px !important;padding-top: 0px !important;padding-bottom: 0px !important;background-position: center;background-repeat: no-repeat;background-size:cover;}.vc_custom_1694517476280{margin-top: 0px !important;margin-bottom: 0px !important;padding-top: 0px !important;padding-bottom: 0px !important;}.vc_custom_1694522185175{margin-top: 0px !important;margin-right: 0px !important;margin-bottom: 0px !important;margin-left: 0px !important;padding-top: 0px !important;padding-right: 0px !important;padding-bottom: 0px !important;padding-left: 0px !important;}.vc_custom_1694517476280{margin-top: 0px !important;margin-bottom: 0px !important;padding-top: 0px !important;padding-bottom: 0px !important;}.vc_custom_1692615802072{margin-top: 0px !important;margin-bottom: 0px !important;padding-top: 0px !important;padding-bottom: 0px !important;}.vc_custom_1692615802072{margin-top: 0px !important;margin-bottom: 0px !important;padding-top: 0px !important;padding-bottom: 0px !important;}.vc_custom_1683790088560{background-color: #1c5d87 !important;background-position: center !important;background-repeat: no-repeat !important;background-size: cover !important;}.vc_custom_1683790088560{background-color: #1c5d87 !important;background-position: center !important;background-repeat: no-repeat !important;background-size: cover !important;}.vc_custom_1692605675435{margin-top: 0px !important;margin-bottom: 0px !important;padding-top: 0px !important;padding-bottom: 0px !important;}.vc_custom_1695207002958{margin-top: 0px !important;margin-bottom: 0px !important;border-right-width: 1px !important;border-left-width: 1px !important;padding-top: 0px !important;padding-bottom: 0px !important;background-image: url(https://angel.ai/wp-content/uploads/2023/09/main-image-bg-amber-9.png?id=776) !important;background-position: center !important;background-repeat: no-repeat !important;background-size: cover !important;border-left-color: #dbdbdb !important;border-left-style: solid !important;border-right-color: #dbdbdb !important;border-right-style: solid !important;}.vc_custom_1685087015119{margin-top: 0px !important;margin-bottom: 0px !important;padding-top: 0px !important;padding-bottom: 0px !important;}.vc_custom_1692858149589{margin-top: 0px !important;margin-right: 0px !important;margin-bottom: 0px !important;padding-top: 10px !important;padding-right: 0px !important;padding-bottom: 0px !important;}.vc_custom_1695900116995{margin-top: 10px !important;margin-bottom: 0px !important;padding-top: 0px !important;padding-bottom: 0px !important;}.vc_custom_1692858192191{margin-right: 0px !important;padding-right: 0px !important;}.vc_custom_1692858171556{margin-right: 0px !important;padding-right: 0px !important;}.vc_custom_1692858252749{margin-left: 0px !important;padding-left: 0px !important;}.vc_custom_1692621416883{margin-top: 0px !important;margin-right: 0px !important;margin-bottom: 0px !important;margin-left: 0px !important;border-right-width: 1px !important;border-left-width: 1px !important;padding-top: 0px !important;padding-right: 20px !important;padding-bottom: 0px !important;padding-left: 20px !important;background-position: 0 0 !important;background-repeat: no-repeat !important;border-left-color: #dbdbdb !important;border-left-style: solid !important;border-right-color: #dbdbdb !important;border-right-style: solid !important;}.vc_custom_1685087015119{margin-top: 0px !important;margin-bottom: 0px !important;padding-top: 0px !important;padding-bottom: 0px !important;}.vc_custom_1694521889010{margin-top: 20px !important;margin-bottom: 0px !important;padding-top: 0px !important;padding-bottom: 0px !important;}.vc_custom_1695900274006{margin-top: 0px !important;margin-bottom: 20px !important;padding-top: 0px !important;padding-bottom: 0px !important;}.vc_custom_1698915390157{margin-top: 0px !important;padding-top: 0px !important;}.vc_custom_1692621289824{border-top-width: 1px !important;border-top-color: #dbdbdb !important;border-top-style: solid !important;}.vc_custom_1695882346149{margin-top: 0px !important;margin-bottom: 40px !important;padding-top: 0px !important;padding-bottom: 0px !important;}.vc_custom_1700145918918{margin-bottom: 0px !important;border-top-width: 1px !important;padding-bottom: 0px !important;border-top-color: #dbdbdb !important;border-top-style: solid !important;}.vc_custom_1700145928715{margin-top: 0px !important;padding-top: 0px !important;}.vc_custom_1695882400269{border-top-width: 1px !important;padding-top: 20px !important;border-top-color: #dbdbdb !important;border-top-style: solid !important;}.vc_custom_1694521863305{margin-top: 10px !important;margin-bottom: 30px !important;padding-top: 0px !important;padding-bottom: 0px !important;}.vc_custom_1700145979348{margin-top: 10px !important;margin-bottom: 10px !important;padding-top: 0px !important;padding-bottom: 0px !important;}.vc_custom_1695897346360{margin-top: 0px !important;padding-top: 0px !important;}.vc_custom_1692605675435{margin-top: 0px !important;margin-bottom: 0px !important;padding-top: 0px !important;padding-bottom: 0px !important;}.vc_custom_1695190698333{margin-top: 0px !important;margin-bottom: 0px !important;padding-top: 0px !important;padding-bottom: 0px !important;background-image: url(https://angel.ai/wp-content/uploads/2023/09/main-image-bg-mobile-7.png?id=774) !important;background-position: 0 0 !important;background-repeat: no-repeat !important;}.vc_custom_1685087015119{margin-top: 0px !important;margin-bottom: 0px !important;padding-top: 0px !important;padding-bottom: 0px !important;}.vc_custom_1695900127234{margin-top: 80px !important;margin-bottom: 0px !important;padding-top: 0px !important;padding-bottom: 0px !important;}.vc_custom_1694517516332{padding-left: 20px !important;}.vc_custom_1694516049732{margin-top: 20px !important;margin-bottom: 0px !important;padding-top: 0px !important;padding-bottom: 0px !important;}.vc_custom_1695900293195{margin-top: 0px !important;margin-bottom: 15px !important;padding-top: 0px !important;padding-bottom: 0px !important;}.vc_custom_1698915398007{margin-top: 0px !important;padding-top: 0px !important;}.vc_custom_1694517516332{padding-left: 20px !important;}.vc_custom_1692796867081{margin-top: 0px !important;margin-bottom: 0px !important;padding-top: 0px !important;padding-bottom: 0px !important;}.vc_custom_1700144583436{margin-top: 0px !important;margin-right: 0px !important;margin-bottom: 0px !important;margin-left: 0px !important;padding-top: 0px !important;padding-right: 10px !important;padding-bottom: 0px !important;padding-left: 10px !important;background-color: #ffffff !important;}.vc_custom_1700144583436{margin-top: 0px !important;margin-right: 0px !important;margin-bottom: 0px !important;margin-left: 0px !important;padding-top: 0px !important;padding-right: 10px !important;padding-bottom: 0px !important;padding-left: 10px !important;background-color: #ffffff !important;}.vc_custom_1695882400269{border-top-width: 1px !important;padding-top: 20px !important;border-top-color: #dbdbdb !important;border-top-style: solid !important;}.vc_custom_1694516281015{margin-top: 10px !important;margin-bottom: 20px !important;padding-top: 0px !important;padding-bottom: 0px !important;}.vc_custom_1692796773104{margin-top: 0px !important;margin-bottom: 0px !important;padding-top: 0px !important;padding-bottom: 0px !important;}.vc_custom_1700145237079{margin-top: 10px !important;margin-bottom: 20px !important;padding-top: 0px !important;padding-bottom: 0px !important;}.vc_custom_1700145376422{margin-top: 0px !important;margin-right: 0px !important;margin-bottom: 0px !important;margin-left: 0px !important;padding-top: 0px !important;padding-right: 10px !important;padding-bottom: 0px !important;padding-left: 10px !important;background-position: center !important;background-repeat: no-repeat !important;background-size: cover !important;border-radius: 15px !important;}.vc_custom_1700145385107{margin-top: 0px !important;margin-right: 0px !important;margin-bottom: 0px !important;margin-left: 0px !important;padding-top: 0px !important;padding-right: 10px !important;padding-bottom: 0px !important;padding-left: 10px !important;background-position: center !important;background-repeat: no-repeat !important;background-size: cover !important;border-radius: 15px !important;}.vc_custom_1700206684871{margin-top: 0px !important;margin-bottom: 0px !important;padding-top: 0px !important;padding-bottom: 0px !important;}.vc_custom_1700206695913{margin-top: 0px !important;margin-bottom: 0px !important;padding-top: 0px !important;padding-bottom: 0px !important;}.vc_custom_1700145391039{margin-top: 0px !important;margin-right: 0px !important;margin-bottom: 0px !important;margin-left: 0px !important;padding-top: 0px !important;padding-right: 10px !important;padding-bottom: 0px !important;padding-left: 10px !important;background-position: center !important;background-repeat: no-repeat !important;background-size: cover !important;border-radius: 15px !important;}.vc_custom_1700145396867{margin-top: 0px !important;margin-right: 0px !important;margin-bottom: 0px !important;margin-left: 0px !important;padding-top: 0px !important;padding-right: 10px !important;padding-bottom: 0px !important;padding-left: 10px !important;background-position: center !important;background-repeat: no-repeat !important;background-size: cover !important;border-radius: 15px !important;}.vc_custom_1700206754761{margin-top: 0px !important;margin-bottom: 0px !important;padding-top: 0px !important;padding-bottom: 0px !important;}.vc_custom_1700206763209{margin-top: 0px !important;margin-bottom: 0px !important;padding-top: 0px !important;padding-bottom: 0px !important;}.vc_custom_1695897354958{margin-top: 0px !important;padding-top: 0px !important;}.vc_custom_1692863864615{margin-top: 0px !important;margin-bottom: 0px !important;padding-top: 0px !important;padding-bottom: 0px !important;}.vc_custom_1692863873786{margin-top: 0px !important;margin-bottom: 0px !important;padding-top: 0px !important;padding-bottom: 0px !important;}.vc_custom_1692863890696{margin-top: 0px !important;margin-bottom: 0px !important;padding-top: 0px !important;padding-bottom: 0px !important;}.vc_custom_1694513301434{margin-top: 0px !important;margin-bottom: 0px !important;padding-top: 0px !important;padding-bottom: 0px !important;}.vc_custom_1694513309248{margin-top: 15px !important;margin-bottom: 0px !important;padding-top: 0px !important;padding-bottom: 0px !important;}.vc_custom_1696345899006{margin-top: 10px !important;margin-bottom: 0px !important;padding-top: 0px !important;padding-bottom: 0px !important;}.vc_custom_1694513356805{margin-top: 0px !important;margin-bottom: 10px !important;padding-top: 0px !important;padding-bottom: 0px !important;}.vc_custom_1694513348542{margin-top: 0px !important;margin-bottom: 10px !important;padding-top: 0px !important;padding-bottom: 0px !important;}.vc_custom_1694513254507{margin-top: 0px !important;margin-bottom: 0px !important;padding-top: 0px !important;padding-bottom: 0px !important;}.vc_custom_1694513273677{margin-top: 15px !important;margin-bottom: 0px !important;padding-top: 0px !important;padding-bottom: 0px !important;}.vc_custom_1696345906111{margin-top: 10px !important;margin-bottom: 0px !important;padding-top: 0px !important;padding-bottom: 0px !important;}.vc_custom_1694513510729{margin-top: 0px !important;margin-bottom: 10px !important;padding-top: 0px !important;padding-bottom: 0px !important;}.vc_custom_1694513489966{margin-top: 0px !important;margin-bottom: 10px !important;padding-top: 0px !important;padding-bottom: 0px !important;}</style><noscript><style> .wpb_animate_when_almost_visible { opacity: 1; }</style></noscript></head>
+
+<body data-cmplz=1 class="page-template-default page page-id-912  header_sticky no-touch cesis_lightbox_lg wpb-js-composer js-comp-ver-6.11.0 vc_responsive">
+<div id="wrap_all">
+
+
+<div id="header_container" class="cesis_opaque_header" >
+
+<header id="cesis_header" class="top-header cesis_sticky cesis_header_hiding  no_shadow">
+
+<div class="header_mobile ">
+  <nav id="mobile-navigation" class="tt-mobile-navigation">
+    <div class="menu-mobile-ct"><ul id="mobile-menu" class="mobile-menu sm smart_menu"><li class="   menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1240 " ><a href="https://angel.ai/"><span>Romantic</span></a></li>
+<li class="   menu-item menu-item-type-custom menu-item-object-custom menu-item-1241 " ><a href="https://angel.ai/female/"><span>Female</span></a></li>
+<li class="   menu-item menu-item-type-custom menu-item-object-custom menu-item-1242 " ><a href="https://angel.ai/male/"><span>Male</span></a></li>
+</ul></div>  </nav>
+  <!-- #site-navigation -->
+
+
+  <!-- .tt-mmobile-additional -->
+
+</div>
+<!-- .header_mobile -->
+
+</header>
+<!-- #cesis_header -->
+</div>
+<!-- #header_container -->
+<div id="main-content" class="main-container">
+
+<main id="cesis_main" class="site-main vc_full_width_row_container  no no no" role="main">
+  <div class="cesis_container">
+    
+    <div class="article_ctn ">
+
+
+	
+<article id="post-912" class="post-912 page type-page status-publish hentry">
+	 <header class="entry-content-header"></header><!-- .entry-content-header -->
+	<div class="entry-content">
+		<section class="wpb-content-wrapper"><div data-vc-full-width="true" data-vc-full-width-init="false"  data-parallax_speed="1.5"  class="vc_row wpb_row vc_row-fluid vc_custom_1692605650060 vc_row-has-fill cesis_row_has_parallax"><div class="wpb_column vc_column_container vc_col-sm-3 vc_hidden-sm vc_hidden-xs"><div class="vc_column-inner vc_custom_1692605675435"><div class="wpb_wrapper"></div></div></div><div class="header_gb wpb_column vc_column_container vc_col-sm-6 vc_hidden-sm vc_hidden-xs vc_col-has-fill"><div class="vc_column-inner vc_custom_1695207002958"><div class="wpb_wrapper"><div class="vc_row wpb_row vc_inner vc_row-fluid vc_custom_1692858149589"><div class="wpb_column vc_column_container vc_col-sm-10"><div class="vc_column-inner"><div class="wpb_wrapper"></div></div></div><div class="wpb_column vc_column_container vc_col-sm-1"><div class="vc_column-inner vc_custom_1692858192191"><div class="wpb_wrapper">
+	<div  class="wpb_single_image wpb_content_element vc_align_right      vc_custom_1692858171556">
+		
+		<figure class="wpb_wrapper vc_figure">
+			<div class="vc_single_image-wrapper   vc_box_border_grey"  ><img decoding="async" class="vc_single_image-img " src="https://angel.ai/wp-content/uploads/2023/08/followers-23x20.png" width="23" height="20" alt="followers" title="followers" /></div>
+		</figure>
+	</div>
+</div></div></div><div class="wpb_column vc_column_container vc_col-sm-1"><div class="vc_column-inner"><div class="wpb_wrapper">
+	<div class="wpb_text_column wpb_content_element  cesis_text_transform_none  vc_custom_1692858252749" style=" color:#ffffff;  font-size:14px;  ">
+		<div class="wpb_wrapper">
+			<p style="text-align: left;">19k</p>
+
+		</div>
+	</div>
+</div></div></div></div>
+	<div  class="wpb_single_image wpb_content_element vc_align_left      vc_custom_1695900116995  to-front">
+		
+		<figure class="wpb_wrapper vc_figure">
+			<div class="vc_single_image-wrapper   vc_box_border_grey"  ><img decoding="async" class="vc_single_image-img " src="https://angel.ai/wp-content/uploads/2023/09/avatar-4-150x150.png" width="150" height="150" alt="avatar" title="avatar" /></div>
+		</figure>
+	</div>
+</div></div></div><div class="wpb_column vc_column_container vc_col-sm-3 vc_hidden-sm vc_hidden-xs"><div class="vc_column-inner vc_custom_1685087015119"><div class="wpb_wrapper"></div></div></div><div class="tt-shape tt-shape-top " data-negative="false"></div><div class="tt-shape tt-shape-bottom " data-negative="false"></div></div><div class="vc_row-full-width vc_clearfix"></div><div data-vc-full-width="true" data-vc-full-width-init="false"  data-parallax_speed="1.5"  class="vc_row wpb_row vc_row-fluid vc_custom_1692608679987 vc_row-has-fill cesis_row_has_parallax"><div class="wpb_column vc_column_container vc_col-sm-3 vc_hidden-sm vc_hidden-xs"><div class="vc_column-inner "><div class="wpb_wrapper"></div></div></div><div class="wpb_column vc_column_container vc_col-sm-6 vc_hidden-sm vc_hidden-xs vc_col-has-fill"><div class="vc_column-inner vc_custom_1692621416883"><div class="wpb_wrapper"><h2 style="font-size: 20px;color: #1e1e1e;line-height: 30px;text-align: left; letter-spacing:0px; " class="vc_custom_heading cesis_text_transform_none vc_custom_1694521889010" >Amber</h2>
+	<div class="wpb_text_column wpb_content_element  cesis_text_transform_none  vc_custom_1695900274006" style=" color:#008000;  font-size:18px;  line-height:1.30em;  ">
+		<div class="wpb_wrapper">
+			<p>@amber_angel98 · <em><strong>Online</strong></em></p>
+
+		</div>
+	</div>
+
+	<div class="wpb_text_column wpb_content_element  cesis_text_transform_none  vc_custom_1698915390157" style=" color:#5b5b5b;  font-size:15px;  line-height:1.30em;  ">
+		<div class="wpb_wrapper">
+			<p>Texas babe with a flirty twist 💋🌵 | Blonde bombshell living it up! ✨ &#8211; Click the buttons below to chat with me. 👇🏽</p>
+
+		</div>
+	</div>
+<div class="vc_row wpb_row vc_inner vc_row-fluid vc_custom_1692621289824 vc_row-has-fill"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner"><div class="wpb_wrapper"><h2 style="font-size: 18px;color: #9e9e9e;line-height: 30px;text-align: left; letter-spacing:0px; " class="vc_custom_heading cesis_text_transform_none vc_custom_1694521863305" >TALK TO ME</h2></div></div></div></div><div class="vc_row wpb_row vc_inner vc_row-fluid vc_custom_1695882346149"><div class="wpb_column vc_column_container vc_col-sm-6"><div class="vc_column-inner"><div class="wpb_wrapper"><div class="wpbsctn "  data-delay="0" ><div class="cesis_button_center"><a href="https://wa.me/34661666007" target="_self"  id="cesis_button_h6m83lso9wew9revh6l7" class="cesis_button_ctn main_font cesis_button_custom center      " data-delay="0" style="margin-top:0px; margin-bottom:0px; margin-right:0px; margin-left:0px;   height:50px; min-width:180px;font-size:16px; font-weight:700; line-height:50px; text-transform:none; letter-spacing:0px;
+		border:0px solid #24b83c; border-radius:25px;  background:#24b83c; color:#ffffff;" onmouseleave=" this.style.borderColor='#24b83c'; this.style.background='#24b83c'; this.style.color='#ffffff';"
+	onmouseenter=" this.style.borderColor='#24b83c'; this.style.background='#24b83c'; this.style.color='#ffffff';"><span class="cesis_button_sub_ctn cesis_button_icon_always cesis_button_icon_left"><i class="cesis_icon_inner fa-whatsapp2" style="line-height:50px;"></i><span class="cesis_button_text">Whatsapp</span></span></a></div></div></div></div></div><div class="wpb_column vc_column_container vc_col-sm-6"><div class="vc_column-inner"><div class="wpb_wrapper"><div class="wpbsctn "  data-delay="0" ><a href="https://t.me/angelcompanionsbot" target="_self"  id="cesis_button_bhespqnzs4nrkvqw7lm8" class="cesis_button_ctn main_font cesis_button_custom cesis_button_left      " data-delay="0" style="margin-top:0px; margin-bottom:0px; margin-right:0px; margin-left:0px;   height:50px; min-width:180px;font-size:16px; font-weight:700; line-height:50px; text-transform:none; letter-spacing:0px;
+		border:0px solid #3597f0; border-radius:25px;  background:#3597f0; color:#ffffff;" onmouseleave=" this.style.borderColor='#3597f0'; this.style.background='#3597f0'; this.style.color='#ffffff';"
+	onmouseenter=" this.style.borderColor='#3597f0'; this.style.background='#3597f0'; this.style.color='#ffffff';"><span class="cesis_button_sub_ctn cesis_button_icon_always cesis_button_icon_left"><i class="cesis_icon_inner fa-telegram" style="line-height:50px;"></i><span class="cesis_button_text">Telegram</span></span></a></div></div></div></div></div><div class="vc_row wpb_row vc_inner vc_row-fluid vc_custom_1700145918918 vc_row-has-fill"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner"><div class="wpb_wrapper"><h2 style="font-size: 18px;color: #9e9e9e;line-height: 30px;text-align: left; letter-spacing:0px; " class="vc_custom_heading cesis_text_transform_none vc_custom_1700145979348" >GALLERY</h2></div></div></div></div><div class="vc_row wpb_row vc_inner vc_row-fluid vc_custom_1700145928715"><div class="wpb_column vc_column_container vc_col-sm-3"><div class="vc_column-inner"><div class="wpb_wrapper">
+	<div  class="wpb_single_image wpb_content_element vc_align_center">
+		
+		<figure class="wpb_wrapper vc_figure">
+			<div class="vc_single_image-wrapper   vc_box_border_grey"  ><img fetchpriority="high" decoding="async" width="338" height="408" src="https://angel.ai/wp-content/uploads/2023/11/gallery-image-amber-01.png" class="vc_single_image-img attachment-full" alt="" title="gallery image amber 01" srcset="https://angel.ai/wp-content/uploads/2023/11/gallery-image-amber-01.png 338w, https://angel.ai/wp-content/uploads/2023/11/gallery-image-amber-01-249x300.png 249w" sizes="(max-width: 338px) 100vw, 338px" /></div>
+		</figure>
+	</div>
+</div></div></div><div class="wpb_column vc_column_container vc_col-sm-3"><div class="vc_column-inner"><div class="wpb_wrapper">
+	<div  class="wpb_single_image wpb_content_element vc_align_center">
+		
+		<figure class="wpb_wrapper vc_figure">
+			<div class="vc_single_image-wrapper   vc_box_border_grey"  ><img loading="lazy" decoding="async" width="338" height="408" src="https://angel.ai/wp-content/uploads/2023/11/gallery-image-amber-02.png" class="vc_single_image-img attachment-full" alt="" title="gallery image amber 02" srcset="https://angel.ai/wp-content/uploads/2023/11/gallery-image-amber-02.png 338w, https://angel.ai/wp-content/uploads/2023/11/gallery-image-amber-02-249x300.png 249w" sizes="(max-width: 338px) 100vw, 338px" /></div>
+		</figure>
+	</div>
+</div></div></div><div class="wpb_column vc_column_container vc_col-sm-3"><div class="vc_column-inner"><div class="wpb_wrapper">
+	<div  class="wpb_single_image wpb_content_element vc_align_center">
+		
+		<figure class="wpb_wrapper vc_figure">
+			<div class="vc_single_image-wrapper   vc_box_border_grey"  ><img loading="lazy" decoding="async" width="338" height="408" src="https://angel.ai/wp-content/uploads/2023/11/gallery-image-amber-03.png" class="vc_single_image-img attachment-full" alt="" title="gallery image amber 03" srcset="https://angel.ai/wp-content/uploads/2023/11/gallery-image-amber-03.png 338w, https://angel.ai/wp-content/uploads/2023/11/gallery-image-amber-03-249x300.png 249w" sizes="(max-width: 338px) 100vw, 338px" /></div>
+		</figure>
+	</div>
+</div></div></div><div class="wpb_column vc_column_container vc_col-sm-3"><div class="vc_column-inner"><div class="wpb_wrapper">
+	<div  class="wpb_single_image wpb_content_element vc_align_center">
+		
+		<figure class="wpb_wrapper vc_figure">
+			<div class="vc_single_image-wrapper   vc_box_border_grey"  ><img loading="lazy" decoding="async" width="338" height="408" src="https://angel.ai/wp-content/uploads/2023/11/gallery-image-amber-04.png" class="vc_single_image-img attachment-full" alt="" title="gallery image amber 04" srcset="https://angel.ai/wp-content/uploads/2023/11/gallery-image-amber-04.png 338w, https://angel.ai/wp-content/uploads/2023/11/gallery-image-amber-04-249x300.png 249w" sizes="(max-width: 338px) 100vw, 338px" /></div>
+		</figure>
+	</div>
+</div></div></div></div><div class="vc_row wpb_row vc_inner vc_row-fluid vc_custom_1695882400269 vc_row-has-fill"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner"><div class="wpb_wrapper">
+	<div class="wpb_text_column wpb_content_element  cesis_text_transform_none  vc_custom_1695897346360" style=" color:#5b5b5b;  font-size:15px;  line-height:1.30em;  ">
+		<div class="wpb_wrapper">
+			<p>Say hello to your new virtual girlfriend, a companion you can talk to, share your dreams with, and enjoy romantic conversations with – all thanks to the wonders of AI technology. Don’t miss out on this opportunity to have a sexy, virtual girlfriend by your side.</p>
+
+		</div>
+	</div>
+</div></div></div></div></div></div></div><div class="wpb_column vc_column_container vc_col-sm-3 vc_hidden-sm vc_hidden-xs"><div class="vc_column-inner vc_custom_1685087015119"><div class="wpb_wrapper"></div></div></div><div class="tt-shape tt-shape-top " data-negative="false"></div><div class="tt-shape tt-shape-bottom " data-negative="false"></div></div><div class="vc_row-full-width vc_clearfix"></div><div data-vc-full-width="true" data-vc-full-width-init="false"  data-parallax_speed="1.5"  class="vc_row wpb_row vc_row-fluid vc_custom_1692605650060 vc_row-has-fill cesis_row_has_parallax"><div class="wpb_column vc_column_container vc_col-sm-3 vc_hidden-sm vc_hidden-xs"><div class="vc_column-inner vc_custom_1692605675435"><div class="wpb_wrapper"></div></div></div><div class="header_gb wpb_column vc_column_container vc_col-sm-6 vc_hidden-lg vc_hidden-md vc_col-has-fill"><div class="vc_column-inner vc_custom_1695190698333"><div class="wpb_wrapper">
+	<div  class="wpb_single_image wpb_content_element vc_align_left      vc_custom_1695900127234  to-front">
+		
+		<figure class="wpb_wrapper vc_figure">
+			<div class="vc_single_image-wrapper   vc_box_border_grey"  ><img loading="lazy" decoding="async" class="vc_single_image-img " src="https://angel.ai/wp-content/uploads/2023/09/avatar-4-130x130.png" width="130" height="130" alt="avatar" title="avatar" /></div>
+		</figure>
+	</div>
+</div></div></div><div class="wpb_column vc_column_container vc_col-sm-3 vc_hidden-sm vc_hidden-xs"><div class="vc_column-inner vc_custom_1685087015119"><div class="wpb_wrapper"></div></div></div><div class="tt-shape tt-shape-top " data-negative="false"></div><div class="tt-shape tt-shape-bottom " data-negative="false"></div></div><div class="vc_row-full-width vc_clearfix"></div><div data-vc-full-width="true" data-vc-full-width-init="false" data-vc-stretch-content="true"  data-parallax_speed="1.5"  class="vc_row wpb_row vc_row-fluid vc_custom_1694517476280 vc_row-has-fill vc_row-no-padding cesis_row_has_parallax"><div class="wpb_column vc_column_container vc_col-sm-12 vc_hidden-lg vc_hidden-md"><div class="vc_column-inner vc_custom_1694517516332"><div class="wpb_wrapper"><h3 style="font-size: 18px;color: #1e1e1e;line-height: 30px;text-align: left; letter-spacing:0px; " class="vc_custom_heading cesis_text_transform_none vc_custom_1694516049732" >Amber</h3>
+	<div class="wpb_text_column wpb_content_element  cesis_text_transform_none  vc_custom_1695900293195" style=" color:#008000;  font-size:16px;  line-height:1.30em;  ">
+		<div class="wpb_wrapper">
+			<p>@amber_angel98 · <em><strong>Online</strong></em></p>
+
+		</div>
+	</div>
+
+	<div class="wpb_text_column wpb_content_element  cesis_text_transform_none  vc_custom_1698915398007" style=" color:#5b5b5b;  font-size:15px;  line-height:1.30em;  ">
+		<div class="wpb_wrapper">
+			<p>Texas babe with a flirty twist 💋🌵 | Blonde bombshell living it up! ✨ &#8211; Click the buttons below to chat with me. 👇🏽</p>
+
+		</div>
+	</div>
+</div></div></div><div class="tt-shape tt-shape-top " data-negative="false"></div><div class="tt-shape tt-shape-bottom " data-negative="false"></div></div><div class="vc_row-full-width vc_clearfix"></div><div data-vc-full-width="true" data-vc-full-width-init="false" data-vc-stretch-content="true"  data-parallax_speed="1.5"  class="vc_row wpb_row vc_row-fluid vc_custom_1694522185175 vc_row-has-fill vc_row-no-padding cesis_row_has_parallax"><div class="wpb_column vc_column_container vc_col-sm-12 vc_hidden-lg vc_hidden-md"><div class="vc_column-inner "><div class="wpb_wrapper"><div class="cesis_line_divider_ctn     cesis_line_d_center " style="width:100%; height:1px; margin-top:0px; margin-bottom:0px;" data-delay="0"><span class="cesis_line_divider" style="width:100%; height:1px; background:#dbdbdb"></span></div></div></div></div><div class="tt-shape tt-shape-top " data-negative="false"></div><div class="tt-shape tt-shape-bottom " data-negative="false"></div></div><div class="vc_row-full-width vc_clearfix"></div><div data-vc-full-width="true" data-vc-full-width-init="false" data-vc-stretch-content="true"  data-parallax_speed="1.5"  class="vc_row wpb_row vc_row-fluid vc_custom_1694517476280 vc_row-has-fill vc_row-no-padding cesis_row_has_parallax"><div class="wpb_column vc_column_container vc_col-sm-12 vc_hidden-lg vc_hidden-md"><div class="vc_column-inner vc_custom_1694517516332"><div class="wpb_wrapper"><div class="vc_row wpb_row vc_inner vc_row-fluid"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner"><div class="wpb_wrapper"><h2 style="font-size: 18px;color: #9e9e9e;line-height: 30px;text-align: left; letter-spacing:0px; " class="vc_custom_heading cesis_text_transform_none vc_custom_1694516281015" >TALK TO ME</h2></div></div></div></div><div class="vc_row wpb_row vc_inner vc_row-fluid vc_custom_1692796867081"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner vc_custom_1692796773104"><div class="wpb_wrapper"><div class="wpbsctn "  data-delay="0" ><div class="cesis_button_center"><a href="https://wa.me/34661666007" target="_self"  id="cesis_button_lwxlmkdti9xcf2plu4r1" class="cesis_button_ctn main_font cesis_button_custom center      " data-delay="0" style="margin-top:0px; margin-bottom:0px; margin-right:0px; margin-left:0px;   height:50px; min-width:180px;font-size:16px; font-weight:700; line-height:50px; text-transform:none; letter-spacing:0px;
+		border:0px solid #24b83c; border-radius:25px;  background:#24b83c; color:#ffffff;" onmouseleave=" this.style.borderColor='#24b83c'; this.style.background='#24b83c'; this.style.color='#ffffff';"
+	onmouseenter=" this.style.borderColor='#24b83c'; this.style.background='#24b83c'; this.style.color='#ffffff';"><span class="cesis_button_sub_ctn cesis_button_icon_always cesis_button_icon_left"><i class="cesis_icon_inner fa-whatsapp2" style="line-height:50px;"></i><span class="cesis_button_text">Whatsapp</span></span></a></div></div><div class="vc_empty_space"   style="height: 30px"><span class="vc_empty_space_inner"></span></div><div class="wpbsctn "  data-delay="0" ><div class="cesis_button_center"><a href="https://t.me/angelcompanionsbot" target="_self"  id="cesis_button_o2cy5xclakzeg7ratkct" class="cesis_button_ctn main_font cesis_button_custom center      " data-delay="0" style="margin-top:0px; margin-bottom:0px; margin-right:0px; margin-left:0px;   height:50px; min-width:180px;font-size:16px; font-weight:700; line-height:50px; text-transform:none; letter-spacing:0px;
+		border:0px solid #3597f0; border-radius:25px;  background:#3597f0; color:#ffffff;" onmouseleave=" this.style.borderColor='#3597f0'; this.style.background='#3597f0'; this.style.color='#ffffff';"
+	onmouseenter=" this.style.borderColor='#3597f0'; this.style.background='#3597f0'; this.style.color='#ffffff';"><span class="cesis_button_sub_ctn cesis_button_icon_always cesis_button_icon_left"><i class="cesis_icon_inner fa-telegram" style="line-height:50px;"></i><span class="cesis_button_text">Telegram</span></span></a></div></div><div class="vc_empty_space"   style="height: 30px"><span class="vc_empty_space_inner"></span></div><div class="cesis_line_divider_ctn     cesis_line_d_center " style="width:100%; height:1px; margin-top:0px; margin-bottom:0px;" data-delay="0"><span class="cesis_line_divider" style="width:100%; height:1px; background:#dbdbdb"></span></div></div></div></div></div><div class="vc_row wpb_row vc_inner vc_row-fluid"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner"><div class="wpb_wrapper"><h2 style="font-size: 18px;color: #9e9e9e;line-height: 30px;text-align: left; letter-spacing:0px; " class="vc_custom_heading cesis_text_transform_none vc_custom_1700145237079" >GALLERY</h2></div></div></div></div><div class="vc_row wpb_row vc_inner vc_row-fluid two-columns vc_custom_1700144583436 vc_row-has-fill vc_column-gap-20"><div class="50-on-mobile wpb_column vc_column_container vc_col-sm-6 vc_col-has-fill"><div class="vc_column-inner vc_custom_1700145376422"><div class="wpb_wrapper">
+	<div  class="wpb_single_image wpb_content_element vc_align_center      vc_custom_1700206684871  50-on-mobile">
+		
+		<figure class="wpb_wrapper vc_figure">
+			<div class="vc_single_image-wrapper   vc_box_border_grey"  ><img fetchpriority="high" decoding="async" width="338" height="408" src="https://angel.ai/wp-content/uploads/2023/11/gallery-image-amber-01.png" class="vc_single_image-img attachment-full" alt="" title="gallery image amber 01" srcset="https://angel.ai/wp-content/uploads/2023/11/gallery-image-amber-01.png 338w, https://angel.ai/wp-content/uploads/2023/11/gallery-image-amber-01-249x300.png 249w" sizes="(max-width: 338px) 100vw, 338px" /></div>
+		</figure>
+	</div>
+</div></div></div><div class="50-on-mobile wpb_column vc_column_container vc_col-sm-6 vc_col-has-fill"><div class="vc_column-inner vc_custom_1700145385107"><div class="wpb_wrapper">
+	<div  class="wpb_single_image wpb_content_element vc_align_center      vc_custom_1700206695913  50-on-mobile">
+		
+		<figure class="wpb_wrapper vc_figure">
+			<div class="vc_single_image-wrapper   vc_box_border_grey"  ><img loading="lazy" decoding="async" width="338" height="408" src="https://angel.ai/wp-content/uploads/2023/11/gallery-image-amber-02.png" class="vc_single_image-img attachment-full" alt="" title="gallery image amber 02" srcset="https://angel.ai/wp-content/uploads/2023/11/gallery-image-amber-02.png 338w, https://angel.ai/wp-content/uploads/2023/11/gallery-image-amber-02-249x300.png 249w" sizes="(max-width: 338px) 100vw, 338px" /></div>
+		</figure>
+	</div>
+</div></div></div></div><div class="vc_row wpb_row vc_inner vc_row-fluid two-columns vc_custom_1700144583436 vc_row-has-fill vc_column-gap-20"><div class="50-on-mobile wpb_column vc_column_container vc_col-sm-6 vc_col-has-fill"><div class="vc_column-inner vc_custom_1700145391039"><div class="wpb_wrapper">
+	<div  class="wpb_single_image wpb_content_element vc_align_center      vc_custom_1700206754761  50-on-mobile">
+		
+		<figure class="wpb_wrapper vc_figure">
+			<div class="vc_single_image-wrapper   vc_box_border_grey"  ><img loading="lazy" decoding="async" width="338" height="408" src="https://angel.ai/wp-content/uploads/2023/11/gallery-image-amber-03.png" class="vc_single_image-img attachment-full" alt="" title="gallery image amber 03" srcset="https://angel.ai/wp-content/uploads/2023/11/gallery-image-amber-03.png 338w, https://angel.ai/wp-content/uploads/2023/11/gallery-image-amber-03-249x300.png 249w" sizes="(max-width: 338px) 100vw, 338px" /></div>
+		</figure>
+	</div>
+</div></div></div><div class="50-on-mobile wpb_column vc_column_container vc_col-sm-6 vc_col-has-fill"><div class="vc_column-inner vc_custom_1700145396867"><div class="wpb_wrapper">
+	<div  class="wpb_single_image wpb_content_element vc_align_center      vc_custom_1700206763209  50-on-mobile">
+		
+		<figure class="wpb_wrapper vc_figure">
+			<div class="vc_single_image-wrapper   vc_box_border_grey"  ><img loading="lazy" decoding="async" width="338" height="408" src="https://angel.ai/wp-content/uploads/2023/11/gallery-image-amber-04.png" class="vc_single_image-img attachment-full" alt="" title="gallery image amber 04" srcset="https://angel.ai/wp-content/uploads/2023/11/gallery-image-amber-04.png 338w, https://angel.ai/wp-content/uploads/2023/11/gallery-image-amber-04-249x300.png 249w" sizes="(max-width: 338px) 100vw, 338px" /></div>
+		</figure>
+	</div>
+</div></div></div></div><div class="vc_row wpb_row vc_inner vc_row-fluid vc_custom_1695882400269 vc_row-has-fill"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner"><div class="wpb_wrapper">
+	<div class="wpb_text_column wpb_content_element  cesis_text_transform_none  vc_custom_1695897354958" style=" color:#5b5b5b;  font-size:15px;  line-height:1.30em;  ">
+		<div class="wpb_wrapper">
+			<p>Say hello to your new virtual girlfriend, a companion you can talk to, share your dreams with, and enjoy romantic conversations with – all thanks to the wonders of AI technology. Don’t miss out on this opportunity to have a sexy, virtual girlfriend by your side.</p>
+
+		</div>
+	</div>
+</div></div></div></div></div></div></div><div class="tt-shape tt-shape-top " data-negative="false"></div><div class="tt-shape tt-shape-bottom " data-negative="false"></div></div><div class="vc_row-full-width vc_clearfix"></div><div data-vc-full-width="true" data-vc-full-width-init="false" data-vc-stretch-content="true" class="vc_row wpb_row vc_row-fluid vc_row-no-padding"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner "><div class="wpb_wrapper"><div class="cesis_line_divider_ctn     cesis_line_d_center " style="width:100%; height:1px; margin-top:0px; margin-bottom:0px;" data-delay="0"><span class="cesis_line_divider" style="width:100%; height:1px; background:#dbdbdb"></span></div><div class="vc_empty_space"   style="height: 20px"><span class="vc_empty_space_inner"></span></div></div></div></div><div class="tt-shape tt-shape-top " data-negative="false"></div><div class="tt-shape tt-shape-bottom " data-negative="false"></div></div><div class="vc_row-full-width vc_clearfix"></div><div class="vc_row wpb_row vc_row-fluid vc_custom_1692615802072"><div class="wpb_column vc_column_container vc_col-sm-3 vc_hidden-sm vc_hidden-xs"><div class="vc_column-inner "><div class="wpb_wrapper"><h3 style="font-size: 23px;color: #fa7973;text-align: center; letter-spacing:0px; " class="vc_custom_heading cesis_text_transform_none" >NO SIGNUP NEEDED</h3></div></div></div><div class="wpb_column vc_column_container vc_col-sm-3 vc_hidden-sm vc_hidden-xs"><div class="vc_column-inner "><div class="wpb_wrapper"><h3 style="font-size: 23px;color: #fa7973;text-align: center; letter-spacing:0px; " class="vc_custom_heading cesis_text_transform_none" >NO ADS</h3></div></div></div><div class="wpb_column vc_column_container vc_col-sm-3 vc_hidden-sm vc_hidden-xs"><div class="vc_column-inner "><div class="wpb_wrapper"><h3 style="font-size: 23px;color: #fa7973;text-align: center; letter-spacing:0px; " class="vc_custom_heading cesis_text_transform_none" >NO DOWNLOADS</h3></div></div></div><div class="wpb_column vc_column_container vc_col-sm-3 vc_hidden-sm vc_hidden-xs"><div class="vc_column-inner "><div class="wpb_wrapper"><h3 style="font-size: 23px;color: #fa7973;text-align: center; letter-spacing:0px; " class="vc_custom_heading cesis_text_transform_none" >100% CONFIDENTIAL</h3></div></div></div><div class="tt-shape tt-shape-top " data-negative="false"></div><div class="tt-shape tt-shape-bottom " data-negative="false"></div></div><div class="vc_row wpb_row vc_row-fluid vc_custom_1692615802072"><div class="wpb_column vc_column_container vc_col-sm-12 vc_hidden-lg vc_hidden-md"><div class="vc_column-inner "><div class="wpb_wrapper"><h3 style="font-size: 18px;color: #fa7973;text-align: center; letter-spacing:0px; " class="vc_custom_heading cesis_text_transform_none vc_custom_1692863864615" >NO DOWNLOADS</h3><h3 style="font-size: 18px;color: #fa7973;text-align: center; letter-spacing:0px; " class="vc_custom_heading cesis_text_transform_none vc_custom_1692863873786" >NO SIGNUP NEEDED</h3><h3 style="font-size: 18px;color: #fa7973;text-align: center; letter-spacing:0px; " class="vc_custom_heading cesis_text_transform_none vc_custom_1692863890696" >100% CONFIDENTIAL</h3></div></div></div><div class="tt-shape tt-shape-top " data-negative="false"></div><div class="tt-shape tt-shape-bottom " data-negative="false"></div></div><div class="vc_row wpb_row vc_row-fluid"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner "><div class="wpb_wrapper"><div class="vc_empty_space"   style="height: 10px"><span class="vc_empty_space_inner"></span></div></div></div></div><div class="tt-shape tt-shape-top " data-negative="false"></div><div class="tt-shape tt-shape-bottom " data-negative="false"></div></div><div data-vc-full-width="true" data-vc-full-width-init="false" data-vc-stretch-content="true" class="vc_row wpb_row vc_row-fluid vc_custom_1683790088560 vc_row-has-fill vc_row-no-padding"><div class="wpb_column vc_column_container vc_col-sm-12 vc_hidden-sm vc_hidden-xs"><div class="vc_column-inner vc_custom_1694513301434"><div class="wpb_wrapper">
+	<div  class="wpb_single_image wpb_content_element vc_align_center      vc_custom_1694513309248">
+		
+		<figure class="wpb_wrapper vc_figure">
+			<div class="vc_single_image-wrapper   vc_box_border_grey"  ><img loading="lazy" decoding="async" class="vc_single_image-img " src="https://angel.ai/wp-content/uploads/2023/08/angel_logo_light-126x35.png" width="126" height="35" alt="angel_logo_light" title="angel_logo_light" /></div>
+		</figure>
+	</div>
+
+	<div class="wpb_text_column wpb_content_element  cesis_text_transform_none  vc_custom_1696345899006" style=" color:#ffffff;  font-size:12px;  ">
+		<div class="wpb_wrapper">
+			<p style="text-align: center;"><strong>Open Spark Pte. Ltd.</strong>  &#8211; 9 Ocean Way #01-31 Singapore 098371</p>
+
+		</div>
+	</div>
+
+	<div class="wpb_text_column wpb_content_element  cesis_text_transform_none  vc_custom_1694513356805" style=" color:#50faf7;  ">
+		<div class="wpb_wrapper">
+			<p style="text-align: center;"><a href="https://angel.ai/terms-of-service/">Terms of Service</a> &#8211; <a href="https://angel.ai/privacy">Privacy Policy</a>    Contact us: support@angel.ai</p>
+
+		</div>
+	</div>
+
+	<div class="wpb_text_column wpb_content_element  cesis_text_transform_none  vc_custom_1694513348542" style=" color:#ffffff;  font-size:10px;  ">
+		<div class="wpb_wrapper">
+			<p style="text-align: center;">Please be aware that this service is powered by artificial intelligence and does not represent a real person. All interactions and conversations are purely virtual and are intended for entertainment purposes only. Users should approach this service understanding it&#8217;s a fantasy experience and not a substitute for genuine human interaction.</p>
+
+		</div>
+	</div>
+</div></div></div><div class="tt-shape tt-shape-top " data-negative="false"></div><div class="tt-shape tt-shape-bottom " data-negative="false"></div></div><div class="vc_row-full-width vc_clearfix"></div><div data-vc-full-width="true" data-vc-full-width-init="false" data-vc-stretch-content="true" class="vc_row wpb_row vc_row-fluid vc_custom_1683790088560 vc_row-has-fill vc_row-no-padding"><div class="wpb_column vc_column_container vc_col-sm-12 vc_hidden-lg vc_hidden-md"><div class="vc_column-inner vc_custom_1694513254507"><div class="wpb_wrapper">
+	<div  class="wpb_single_image wpb_content_element vc_align_center      vc_custom_1694513273677">
+		
+		<figure class="wpb_wrapper vc_figure">
+			<div class="vc_single_image-wrapper   vc_box_border_grey"  ><img loading="lazy" decoding="async" class="vc_single_image-img " src="https://angel.ai/wp-content/uploads/2023/08/angel_logo_light-126x35.png" width="126" height="35" alt="angel_logo_light" title="angel_logo_light" /></div>
+		</figure>
+	</div>
+
+	<div class="wpb_text_column wpb_content_element  cesis_text_transform_none  vc_custom_1696345906111" style=" color:#ffffff;  font-size:11px;  ">
+		<div class="wpb_wrapper">
+			<p style="text-align: center;"><strong>Open Spark Pte. Ltd.</strong>  &#8211; 9 Ocean Way #01-31 Singapore 098371</p>
+
+		</div>
+	</div>
+
+	<div class="wpb_text_column wpb_content_element  cesis_text_transform_none  vc_custom_1694513510729" style=" color:#50faf7;  font-size:12px;  ">
+		<div class="wpb_wrapper">
+			<p style="text-align: center;"><a href="https://angel.ai/terms-of-service/">Terms of Service</a> &#8211; <a href="https://angel.ai/privacy">Privacy Policy  </a>Contact us: support@angel.ai</p>
+
+		</div>
+	</div>
+
+	<div class="wpb_text_column wpb_content_element  cesis_text_transform_none cesis_line_d_center vc_custom_1694513489966" style=" color:#ffffff;  font-size:10px;  line-height:18px;  max-width:1420px;  ">
+		<div class="wpb_wrapper">
+			<p style="text-align: center;">Please be aware that this service is powered by artificial intelligence and does not represent a real person. All interactions are purely virtual and are intended for entertainment purposes only. Users should approach this service understanding it&#8217;s a fantasy experience and not a substitute for genuine human interaction.</p>
+
+		</div>
+	</div>
+</div></div></div><div class="tt-shape tt-shape-top " data-negative="false"></div><div class="tt-shape tt-shape-bottom " data-negative="false"></div></div><div class="vc_row-full-width vc_clearfix"></div>
+</section>	</div><!-- .entry-content -->
+    <footer class="entry-footer"></footer><!-- .entry-footer --></article><!-- #post-## -->
+
+	
+    </div>
+
+    
+  </div>
+  <!-- .container -->
+</main>
+<!-- #main -->
+
+	</div><!-- #content -->
+
+	<footer id="cesis_colophon" class="site-footer scrollmagic-pin-spacer no">
+
+
+
+	</footer><!-- #cesis_colophon -->
+ 	 <a id="cesis_to_top"><i class="fa-angle-up"></i></a>
+ </div><!-- #wrapp_all -->
+<div class="cesis_search_overlay">
+	<div class="cesis_menu_button cesis_search_close open"><span class="lines"></span></div>
+	<div class="cesis_search_container">
+
+		
+			<form role="search" method="get" class="search-form" action="https://angel.ai">
+							<div>
+								<input type="search" class="search-field" placeholder="Search …" value="" name="s">
+								<input type="submit" class="search-submit" value="">
+								<i class="fa fa-search2"></i>
+							</div>
+			</form>	</div>
+</div>
+
+		<script>
+			window.RS_MODULES = window.RS_MODULES || {};
+			window.RS_MODULES.modules = window.RS_MODULES.modules || {};
+			window.RS_MODULES.waiting = window.RS_MODULES.waiting || [];
+			window.RS_MODULES.defered = true;
+			window.RS_MODULES.moduleWaiting = window.RS_MODULES.moduleWaiting || {};
+			window.RS_MODULES.type = 'compiled';
+		</script>
+		
+<!-- Consent Management powered by Complianz | GDPR/CCPA Cookie Consent https://wordpress.org/plugins/complianz-gdpr -->
+<div id="cmplz-cookiebanner-container"><div class="cmplz-cookiebanner cmplz-hidden banner-1 optout cmplz-bottom-right cmplz-categories-type-view-preferences" aria-modal="true" data-nosnippet="true" role="dialog" aria-live="polite" aria-labelledby="cmplz-header-1-optout" aria-describedby="cmplz-message-1-optout">
+	<div class="cmplz-header">
+		<div class="cmplz-logo"></div>
+		<div class="cmplz-title" id="cmplz-header-1-optout">Manage Cookie Consent</div>
+		<div class="cmplz-close" tabindex="0" role="button" aria-label="close-dialog">
+			<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="times" class="svg-inline--fa fa-times fa-w-11" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 352 512"><path fill="currentColor" d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"></path></svg>
+		</div>
+	</div>
+
+	<div class="cmplz-divider cmplz-divider-header"></div>
+	<div class="cmplz-body">
+		<div class="cmplz-message" id="cmplz-message-1-optout">To provide the best experiences, we use technologies like cookies to store and/or access device information. Consenting to these technologies will allow us to process data such as browsing behavior or unique IDs on this site. Not consenting or withdrawing consent, may adversely affect certain features and functions.</div>
+		<!-- categories start -->
+		<div class="cmplz-categories">
+			<details class="cmplz-category cmplz-functional" >
+				<summary>
+						<span class="cmplz-category-header">
+							<span class="cmplz-category-title">Functional</span>
+							<span class='cmplz-always-active'>
+								<span class="cmplz-banner-checkbox">
+									<input type="checkbox"
+										   id="cmplz-functional-optout"
+										   data-category="cmplz_functional"
+										   class="cmplz-consent-checkbox cmplz-functional"
+										   size="40"
+										   value="1"/>
+									<label class="cmplz-label" for="cmplz-functional-optout" tabindex="0"><span class="screen-reader-text">Functional</span></label>
+								</span>
+								Always active							</span>
+							<span class="cmplz-icon cmplz-open">
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"  height="18" ><path d="M224 416c-8.188 0-16.38-3.125-22.62-9.375l-192-192c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L224 338.8l169.4-169.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-192 192C240.4 412.9 232.2 416 224 416z"/></svg>
+							</span>
+						</span>
+				</summary>
+				<div class="cmplz-description">
+					<span class="cmplz-description-functional">The technical storage or access is strictly necessary for the legitimate purpose of enabling the use of a specific service explicitly requested by the subscriber or user, or for the sole purpose of carrying out the transmission of a communication over an electronic communications network.</span>
+				</div>
+			</details>
+
+			<details class="cmplz-category cmplz-preferences" >
+				<summary>
+						<span class="cmplz-category-header">
+							<span class="cmplz-category-title">Preferences</span>
+							<span class="cmplz-banner-checkbox">
+								<input type="checkbox"
+									   id="cmplz-preferences-optout"
+									   data-category="cmplz_preferences"
+									   class="cmplz-consent-checkbox cmplz-preferences"
+									   size="40"
+									   value="1"/>
+								<label class="cmplz-label" for="cmplz-preferences-optout" tabindex="0"><span class="screen-reader-text">Preferences</span></label>
+							</span>
+							<span class="cmplz-icon cmplz-open">
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"  height="18" ><path d="M224 416c-8.188 0-16.38-3.125-22.62-9.375l-192-192c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L224 338.8l169.4-169.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-192 192C240.4 412.9 232.2 416 224 416z"/></svg>
+							</span>
+						</span>
+				</summary>
+				<div class="cmplz-description">
+					<span class="cmplz-description-preferences">The technical storage or access is necessary for the legitimate purpose of storing preferences that are not requested by the subscriber or user.</span>
+				</div>
+			</details>
+
+			<details class="cmplz-category cmplz-statistics" >
+				<summary>
+						<span class="cmplz-category-header">
+							<span class="cmplz-category-title">Statistics</span>
+							<span class="cmplz-banner-checkbox">
+								<input type="checkbox"
+									   id="cmplz-statistics-optout"
+									   data-category="cmplz_statistics"
+									   class="cmplz-consent-checkbox cmplz-statistics"
+									   size="40"
+									   value="1"/>
+								<label class="cmplz-label" for="cmplz-statistics-optout" tabindex="0"><span class="screen-reader-text">Statistics</span></label>
+							</span>
+							<span class="cmplz-icon cmplz-open">
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"  height="18" ><path d="M224 416c-8.188 0-16.38-3.125-22.62-9.375l-192-192c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L224 338.8l169.4-169.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-192 192C240.4 412.9 232.2 416 224 416z"/></svg>
+							</span>
+						</span>
+				</summary>
+				<div class="cmplz-description">
+					<span class="cmplz-description-statistics">The technical storage or access that is used exclusively for statistical purposes.</span>
+					<span class="cmplz-description-statistics-anonymous">The technical storage or access that is used exclusively for anonymous statistical purposes. Without a subpoena, voluntary compliance on the part of your Internet Service Provider, or additional records from a third party, information stored or retrieved for this purpose alone cannot usually be used to identify you.</span>
+				</div>
+			</details>
+			<details class="cmplz-category cmplz-marketing" >
+				<summary>
+						<span class="cmplz-category-header">
+							<span class="cmplz-category-title">Marketing</span>
+							<span class="cmplz-banner-checkbox">
+								<input type="checkbox"
+									   id="cmplz-marketing-optout"
+									   data-category="cmplz_marketing"
+									   class="cmplz-consent-checkbox cmplz-marketing"
+									   size="40"
+									   value="1"/>
+								<label class="cmplz-label" for="cmplz-marketing-optout" tabindex="0"><span class="screen-reader-text">Marketing</span></label>
+							</span>
+							<span class="cmplz-icon cmplz-open">
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"  height="18" ><path d="M224 416c-8.188 0-16.38-3.125-22.62-9.375l-192-192c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L224 338.8l169.4-169.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-192 192C240.4 412.9 232.2 416 224 416z"/></svg>
+							</span>
+						</span>
+				</summary>
+				<div class="cmplz-description">
+					<span class="cmplz-description-marketing">The technical storage or access is required to create user profiles to send advertising, or to track the user on a website or across several websites for similar marketing purposes.</span>
+				</div>
+			</details>
+		</div><!-- categories end -->
+			</div>
+
+	<div class="cmplz-links cmplz-information">
+		<a class="cmplz-link cmplz-manage-options cookie-statement" href="#" data-relative_url="#cmplz-manage-consent-container">Manage options</a>
+		<a class="cmplz-link cmplz-manage-third-parties cookie-statement" href="#" data-relative_url="#cmplz-cookies-overview">Manage services</a>
+		<a class="cmplz-link cmplz-manage-vendors tcf cookie-statement" href="#" data-relative_url="#cmplz-tcf-wrapper">Manage vendors</a>
+		<a class="cmplz-link cmplz-external cmplz-read-more-purposes tcf" target="_blank" rel="noopener noreferrer nofollow" href="https://cookiedatabase.org/tcf/purposes/">Read more about these purposes</a>
+			</div>
+
+	<div class="cmplz-divider cmplz-footer"></div>
+
+	<div class="cmplz-buttons">
+		<button class="cmplz-btn cmplz-accept">Accept</button>
+		<button class="cmplz-btn cmplz-deny">Deny</button>
+		<button class="cmplz-btn cmplz-view-preferences">View preferences</button>
+		<button class="cmplz-btn cmplz-save-preferences">Save preferences</button>
+		<a class="cmplz-btn cmplz-manage-options tcf cookie-statement" href="#" data-relative_url="#cmplz-manage-consent-container">View preferences</a>
+			</div>
+
+	<div class="cmplz-links cmplz-documents">
+		<a class="cmplz-link cookie-statement" href="#" data-relative_url="">{title}</a>
+		<a class="cmplz-link privacy-statement" href="#" data-relative_url="">{title}</a>
+		<a class="cmplz-link impressum" href="#" data-relative_url="">{title}</a>
+			</div>
+
+</div>
+</div>
+					<div id="cmplz-manage-consent" data-nosnippet="true"><button class="cmplz-btn cmplz-hidden cmplz-manage-consent manage-consent-1">Manage consent</button>
+
+</div><!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TF223TR" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) --><script type="text/html" id="wpb-modifications"> window.wpbCustomElement = 1; </script><link rel='stylesheet' id='redux-custom-fonts-css-css' href='//angel.ai/wp-content/uploads/redux/custom-fonts/fonts.css?ver=1702919779' type='text/css' media='all' />
+<link rel='stylesheet' id='rs-plugin-settings-css' href='https://angel.ai/wp-content/plugins/revslider/public/assets/css/rs6.css?ver=6.6.13' type='text/css' media='all' />
+<style id='rs-plugin-settings-inline-css' type='text/css'>
+#rs-demo-id {}
+</style>
+<script type="text/javascript" src="https://angel.ai/wp-content/plugins/contact-form-7/includes/swv/js/index.js?ver=5.8" id="swv-js"></script>
+<script type="text/javascript" id="contact-form-7-js-extra">
+/* <![CDATA[ */
+var wpcf7 = {"api":{"root":"https:\/\/angel.ai\/wp-json\/","namespace":"contact-form-7\/v1"}};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://angel.ai/wp-content/plugins/contact-form-7/includes/js/index.js?ver=5.8" id="contact-form-7-js"></script>
+<script type="text/javascript" src="https://angel.ai/wp-content/plugins/revslider/public/assets/js/rbtools.min.js?ver=6.6.13" defer async id="tp-tools-js"></script>
+<script type="text/javascript" src="https://angel.ai/wp-content/plugins/revslider/public/assets/js/rs6.min.js?ver=6.6.13" defer async id="revmin-js"></script>
+<script type="text/javascript" src="https://angel.ai/wp-content/themes/cesis/js/cesis_collapse.js?ver=6.4.2" id="collapse-js"></script>
+<script type="text/javascript" src="https://angel.ai/wp-content/themes/cesis/js/cesis_countup.js?ver=6.4.2" id="countup-js"></script>
+<script type="text/javascript" src="https://angel.ai/wp-content/themes/cesis/js/cesis_easing.js?ver=6.4.2" id="easing-js"></script>
+<script type="text/javascript" src="https://angel.ai/wp-content/themes/cesis/js/cesis_fittext.js?ver=6.4.2" id="fittext-js"></script>
+<script type="text/javascript" src="https://angel.ai/wp-content/themes/cesis/js/fitvids.js?ver=6.4.2" id="fitvids-js"></script>
+<script type="text/javascript" src="https://angel.ai/wp-content/themes/cesis/js/fonticonpicker.js?ver=6.4.2" id="fonticonpicker-js"></script>
+<script type="text/javascript" src="https://angel.ai/wp-content/themes/cesis/js/lightgallery.js?ver=6.4.2" id="lightgallery-js"></script>
+<script type="text/javascript" src="https://angel.ai/wp-content/themes/cesis/js/owlcarousel.js?ver=6.4.2" id="owlcarousel-js"></script>
+<script type="text/javascript" src="https://angel.ai/wp-content/themes/cesis/js/scrollmagic.js?ver=6.4.2" id="scrollmagic-js"></script>
+<script type="text/javascript" src="https://angel.ai/wp-content/themes/cesis/js/cesis_transition.js?ver=6.4.2" id="transition-js"></script>
+<script type="text/javascript" src="https://angel.ai/wp-content/themes/cesis/js/smartmenus.js?ver=6.4.2" id="smartmenus-js"></script>
+<script type="text/javascript" src="https://angel.ai/wp-content/themes/cesis/js/isotope.js?ver=6.4.2" id="cesis-isotope-js"></script>
+<script type="text/javascript" src="https://angel.ai/wp-content/themes/cesis/js/waypoints.js?ver=6.4.2" id="cesis-waypoints-js"></script>
+<script type="text/javascript" id="cesis-custom-js-extra">
+/* <![CDATA[ */
+var cesis_ajax_val = {"ajaxurl":"https:\/\/angel.ai\/wp-admin\/admin-ajax.php","noposts":"No more posts","loading":"Loading","loadmore":"Load more"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://angel.ai/wp-content/themes/cesis/js/cesis_custom.js?ver=6.4.2" id="cesis-custom-js"></script>
+<script type="text/javascript" src="https://angel.ai/wp-includes/js/jquery/ui/effect.min.js?ver=1.13.2" id="jquery-effects-core-js"></script>
+<script type="text/javascript" id="the-grid-js-extra">
+/* <![CDATA[ */
+var tg_global_var = {"url":"https:\/\/angel.ai\/wp-admin\/admin-ajax.php","nonce":"07a0dadeb8","is_mobile":null,"mediaelement":"","mediaelement_ex":null,"lightbox_autoplay":"","debounce":"","meta_data":null,"main_query":{"page":0,"pagename":"amber","error":"","m":"","p":0,"post_parent":"","subpost":"","subpost_id":"","attachment":"","attachment_id":0,"name":"amber","page_id":0,"second":"","minute":"","hour":"","day":0,"monthnum":0,"year":0,"w":0,"category_name":"","tag":"","cat":"","tag_id":"","author":"","author_name":"","feed":"","tb":"","paged":0,"meta_key":"","meta_value":"","preview":"","s":"","sentence":"","title":"","fields":"","menu_order":"","embed":"","category__in":[],"category__not_in":[],"category__and":[],"post__in":[],"post__not_in":[],"post_name__in":[],"tag__in":[],"tag__not_in":[],"tag__and":[],"tag_slug__in":[],"tag_slug__and":[],"post_parent__in":[],"post_parent__not_in":[],"author__in":[],"author__not_in":[],"search_columns":[],"ignore_sticky_posts":false,"suppress_filters":false,"cache_results":true,"update_post_term_cache":true,"update_menu_item_cache":false,"lazy_load_term_meta":true,"update_post_meta_cache":true,"post_type":"","posts_per_page":10,"nopaging":false,"comments_per_page":"50","no_found_rows":false,"order":"DESC"}};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://angel.ai/wp-content/plugins/the-grid/frontend/assets/js/the-grid.min.js?ver=2.7.9.1" id="the-grid-js"></script>
+<script type="text/javascript" id="cmplz-cookiebanner-js-extra">
+/* <![CDATA[ */
+var complianz = {"prefix":"cmplz_","user_banner_id":"1","set_cookies":[],"block_ajax_content":"","banner_version":"13","version":"6.4.6","store_consent":"","do_not_track_enabled":"","consenttype":"optout","region":"us","geoip":"","dismiss_timeout":"","disable_cookiebanner":"","soft_cookiewall":"","dismiss_on_scroll":"","cookie_expiry":"365","url":"https:\/\/angel.ai\/wp-json\/complianz\/v1\/","locale":"lang=en&locale=en_US","set_cookies_on_root":"","cookie_domain":"","current_policy_id":"15","cookie_path":"\/","categories":{"statistics":"statistics","marketing":"marketing"},"tcf_active":"","placeholdertext":"Click to accept {category} cookies and enable this content","aria_label":"Click to accept {category} cookies and enable this content","css_file":"https:\/\/angel.ai\/wp-content\/uploads\/complianz\/css\/banner-{banner_id}-{type}.css?v=13","page_links":{"us":{"cookie-statement":{"title":"Cookies","url":"https:\/\/angel.ai\/cookies\/"},"privacy-statement":{"title":"Privacy","url":"https:\/\/angel.ai\/privacy\/"},"impressum":{"title":"Terms of Service","url":"https:\/\/angel.ai\/terms-of-service\/"}},"eu":{"impressum":{"title":"Terms of Service","url":"https:\/\/angel.ai\/terms-of-service\/"}},"uk":{"impressum":{"title":"Terms of Service","url":"https:\/\/angel.ai\/terms-of-service\/"}},"ca":{"impressum":{"title":"Terms of Service","url":"https:\/\/angel.ai\/terms-of-service\/"}},"au":{"impressum":{"title":"Terms of Service","url":"https:\/\/angel.ai\/terms-of-service\/"}},"za":{"impressum":{"title":"Terms of Service","url":"https:\/\/angel.ai\/terms-of-service\/"}},"br":{"impressum":{"title":"Terms of Service","url":"https:\/\/angel.ai\/terms-of-service\/"}}},"tm_categories":"","forceEnableStats":"","preview":"","clean_cookies":""};
+/* ]]> */
+</script>
+<script defer type="text/javascript" src="https://angel.ai/wp-content/plugins/complianz-gdpr/cookiebanner/js/complianz.min.js?ver=6.4.6" id="cmplz-cookiebanner-js"></script>
+<script type="text/javascript" src="https://angel.ai/wp-content/plugins/js_composer/assets/js/dist/js_composer_front.min.js?ver=6.11.0" id="wpb_composer_front_js-js"></script>
+				<script type="text/plain" data-service="google-analytics" async data-category="statistics" data-cmplz-src="https://www.googletagmanager.com/gtag/js?id=G-68X60WM2LX"></script><!-- Statistics script Complianz GDPR/CCPA -->
+						<script type="text/plain" data-category="statistics">window['gtag_enable_tcf_support'] = false;
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-68X60WM2LX', {
+	cookie_flags:'secure;samesite=none',
+	
+});
+</script><script type="text/javascript">var to_like_post = {"url":"https://angel.ai/wp-admin/admin-ajax.php","nonce":"c128cc18d5"};!function(t){"use strict";t(document).ready(function(){t(document).on("click",".to-post-like:not('.to-post-like-unactive')",function(e){e.preventDefault();var o=t(this),n=o.data("post-id"),s=parseInt(o.find(".to-like-count").text());return o.addClass("heart-pulse"),t.ajax({type:"post",url:to_like_post.url,data:{nonce:to_like_post.nonce,action:"to_like_post",post_id:n,like_nb:s},context:o,success:function(e){e&&((o=t(this)).attr("title",e.title),o.find(".to-like-count").text(e.count),o.removeClass(e.remove_class+" heart-pulse").addClass(e.add_class))}}),!1})})}(jQuery);</script>
+</body>
+</html>
+data:<!doctype html>
+<html lang="en-US" class="no-js" itemtype="https://schema.org/Blog" itemscope>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+	<meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+
+	<!-- This site is optimized with the Yoast SEO plugin v21.7 - https://yoast.com/wordpress/plugins/seo/ -->
+	<title>EDEN ROBOTICS Foxi Companion Robot - Eden Robot Innovation</title>
+	<link rel="canonical" href="https://edenrobotinnovation.com/shop/eden-robotics-foxi-companion-robot/" />
+	<meta property="og:locale" content="en_US" />
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content="EDEN ROBOTICS Foxi Companion Robot - Eden Robot Innovation" />
+	<meta property="og:description" content="Companion robot Foxi is the next technological frontier in personal robotics. She can be your own household maid, lover, companion, and anything else you want her to be." />
+	<meta property="og:url" content="https://edenrobotinnovation.com/shop/eden-robotics-foxi-companion-robot/" />
+	<meta property="og:site_name" content="Eden Robot Innovation" />
+	<meta property="article:modified_time" content="2023-07-10T23:19:48+00:00" />
+	<meta property="og:image" content="https://edenrobotinnovation.com/wp-content/uploads/2023/06/er-foxi01.jpg" />
+	<meta property="og:image:width" content="700" />
+	<meta property="og:image:height" content="700" />
+	<meta property="og:image:type" content="image/jpeg" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:label1" content="Est. reading time" />
+	<meta name="twitter:data1" content="1 minute" />
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"https://edenrobotinnovation.com/shop/eden-robotics-foxi-companion-robot/","url":"https://edenrobotinnovation.com/shop/eden-robotics-foxi-companion-robot/","name":"EDEN ROBOTICS Foxi Companion Robot - Eden Robot Innovation","isPartOf":{"@id":"https://edenrobotinnovation.com/#website"},"primaryImageOfPage":{"@id":"https://edenrobotinnovation.com/shop/eden-robotics-foxi-companion-robot/#primaryimage"},"image":{"@id":"https://edenrobotinnovation.com/shop/eden-robotics-foxi-companion-robot/#primaryimage"},"thumbnailUrl":"https://edenrobotinnovation.com/wp-content/uploads/2023/06/er-foxi01.jpg","datePublished":"2023-06-22T23:56:53+00:00","dateModified":"2023-07-10T23:19:48+00:00","breadcrumb":{"@id":"https://edenrobotinnovation.com/shop/eden-robotics-foxi-companion-robot/#breadcrumb"},"inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https://edenrobotinnovation.com/shop/eden-robotics-foxi-companion-robot/"]}]},{"@type":"ImageObject","inLanguage":"en-US","@id":"https://edenrobotinnovation.com/shop/eden-robotics-foxi-companion-robot/#primaryimage","url":"https://edenrobotinnovation.com/wp-content/uploads/2023/06/er-foxi01.jpg","contentUrl":"https://edenrobotinnovation.com/wp-content/uploads/2023/06/er-foxi01.jpg","width":700,"height":700},{"@type":"BreadcrumbList","@id":"https://edenrobotinnovation.com/shop/eden-robotics-foxi-companion-robot/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://edenrobotinnovation.com/"},{"@type":"ListItem","position":2,"name":"Shop","item":"https://edenrobotinnovation.com/robotics-engineering/"},{"@type":"ListItem","position":3,"name":"EDEN ROBOTICS Foxi Companion Robot"}]},{"@type":"WebSite","@id":"https://edenrobotinnovation.com/#website","url":"https://edenrobotinnovation.com/","name":"Eden Robot Innovation","description":"","publisher":{"@id":"https://edenrobotinnovation.com/#organization"},"potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://edenrobotinnovation.com/?s={search_term_string}"},"query-input":"required name=search_term_string"}],"inLanguage":"en-US"},{"@type":"Organization","@id":"https://edenrobotinnovation.com/#organization","name":"Eden Robot Innovation","url":"https://edenrobotinnovation.com/","logo":{"@type":"ImageObject","inLanguage":"en-US","@id":"https://edenrobotinnovation.com/#/schema/logo/image/","url":"https://edenrobotinnovation.com/wp-content/uploads/2023/06/Logo300.png","contentUrl":"https://edenrobotinnovation.com/wp-content/uploads/2023/06/Logo300.png","width":300,"height":75,"caption":"Eden Robot Innovation"},"image":{"@id":"https://edenrobotinnovation.com/#/schema/logo/image/"}}]}</script>
+	<!-- / Yoast SEO plugin. -->
+
+
+<link rel='dns-prefetch' href='//stats.wp.com' />
+<link rel='dns-prefetch' href='//www.googletagmanager.com' />
+<link rel="alternate" type="application/rss+xml" title="Eden Robot Innovation &raquo; Feed" href="https://edenrobotinnovation.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Eden Robot Innovation &raquo; Comments Feed" href="https://edenrobotinnovation.com/comments/feed/" />
+			<script>document.documentElement.classList.remove( 'no-js' );</script>
+			<link rel="alternate" type="application/rss+xml" title="Eden Robot Innovation &raquo; EDEN ROBOTICS Foxi Companion Robot Comments Feed" href="https://edenrobotinnovation.com/shop/eden-robotics-foxi-companion-robot/feed/" />
+<script>
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/edenrobotinnovation.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=e6002d03184d4600d262284f5c87daa6"}};
+/*! This file is auto-generated */
+!function(i,n){var o,s,e;function c(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(o,JSON.stringify(t))}catch(e){}}function p(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data),r=(e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0),new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data));return t.every(function(e,t){return e===r[t]})}function u(e,t,n){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\uddfa\ud83c\uddf3","\ud83c\uddfa\u200b\ud83c\uddf3")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!n(e,"\ud83e\udef1\ud83c\udffb\u200d\ud83e\udef2\ud83c\udfff","\ud83e\udef1\ud83c\udffb\u200b\ud83e\udef2\ud83c\udfff")}return!1}function f(e,t,n){var r="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):i.createElement("canvas"),a=r.getContext("2d",{willReadFrequently:!0}),o=(a.textBaseline="top",a.font="600 32px Arial",{});return e.forEach(function(e){o[e]=t(a,e,n)}),o}function t(e){var t=i.createElement("script");t.src=e,t.defer=!0,i.head.appendChild(t)}"undefined"!=typeof Promise&&(o="wpEmojiSettingsSupports",s=["flag","emoji"],n.supports={everything:!0,everythingExceptFlag:!0},e=new Promise(function(e){i.addEventListener("DOMContentLoaded",e,{once:!0})}),new Promise(function(t){var n=function(){try{var e=JSON.parse(sessionStorage.getItem(o));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+f.toString()+"("+[JSON.stringify(s),u.toString(),p.toString()].join(",")+"));",r=new Blob([e],{type:"text/javascript"}),a=new Worker(URL.createObjectURL(r),{name:"wpTestEmojiSupports"});return void(a.onmessage=function(e){c(n=e.data),a.terminate(),t(n)})}catch(e){}c(n=f(s,u,p))}t(n)}).then(function(e){for(var t in e)n.supports[t]=e[t],n.supports.everything=n.supports.everything&&n.supports[t],"flag"!==t&&(n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&n.supports[t]);n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&!n.supports.flag,n.DOMReady=!1,n.readyCallback=function(){n.DOMReady=!0}}).then(function(){return e}).then(function(){var e;n.supports.everything||(n.readyCallback(),(e=n.source||{}).concatemoji?t(e.concatemoji):e.wpemoji&&e.twemoji&&(t(e.twemoji),t(e.wpemoji)))}))}((window,document),window._wpemojiSettings);
+</script>
+<style id='wp-emoji-styles-inline-css'>
+
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+</style>
+<link rel='stylesheet' id='wp-block-library-css' href='https://edenrobotinnovation.com/wp-includes/css/dist/block-library/style.min.css?ver=e6002d03184d4600d262284f5c87daa6' media='all' />
+<style id='classic-theme-styles-inline-css'>
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+</style>
+<style id='global-styles-inline-css'>
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--color--theme-palette-1: #2B6CB0;--wp--preset--color--theme-palette-2: #215387;--wp--preset--color--theme-palette-3: #1A202C;--wp--preset--color--theme-palette-4: #2D3748;--wp--preset--color--theme-palette-5: #4A5568;--wp--preset--color--theme-palette-6: #718096;--wp--preset--color--theme-palette-7: #EDF2F7;--wp--preset--color--theme-palette-8: #F7FAFC;--wp--preset--color--theme-palette-9: #ffffff;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 14px;--wp--preset--font-size--medium: 24px;--wp--preset--font-size--large: 32px;--wp--preset--font-size--x-large: 42px;--wp--preset--font-size--larger: 40px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}body .is-layout-flex{flex-wrap: wrap;align-items: center;}body .is-layout-flex > *{margin: 0;}body .is-layout-grid{display: grid;}body .is-layout-grid > *{margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+.wp-block-navigation a:where(:not(.wp-element-button)){color: inherit;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+.wp-block-pullquote{font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel='stylesheet' id='contact-form-7-css' href='https://edenrobotinnovation.com/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=5.8.4' media='all' />
+<link rel='stylesheet' id='photoswipe-css' href='https://edenrobotinnovation.com/wp-content/plugins/woocommerce/assets/css/photoswipe/photoswipe.min.css?ver=8.4.0' media='all' />
+<link rel='stylesheet' id='photoswipe-default-skin-css' href='https://edenrobotinnovation.com/wp-content/plugins/woocommerce/assets/css/photoswipe/default-skin/default-skin.min.css?ver=8.4.0' media='all' />
+<style id='woocommerce-inline-inline-css'>
+.woocommerce form .form-row .required { visibility: visible; }
+</style>
+<link rel='stylesheet' id='kadence-global-css' href='https://edenrobotinnovation.com/wp-content/themes/kadence/assets/css/global.min.css?ver=1.1.49' media='all' />
+<style id='kadence-global-inline-css'>
+/* Kadence Base CSS */
+:root{--global-palette1:#2B6CB0;--global-palette2:#215387;--global-palette3:#1A202C;--global-palette4:#2D3748;--global-palette5:#4A5568;--global-palette6:#718096;--global-palette7:#EDF2F7;--global-palette8:#F7FAFC;--global-palette9:#ffffff;--global-palette9rgb:255, 255, 255;--global-palette-highlight:var(--global-palette1);--global-palette-highlight-alt:var(--global-palette2);--global-palette-highlight-alt2:var(--global-palette9);--global-palette-btn-bg:var(--global-palette1);--global-palette-btn-bg-hover:var(--global-palette2);--global-palette-btn:var(--global-palette9);--global-palette-btn-hover:var(--global-palette9);--global-body-font-family:'Merriweather Sans', sans-serif;--global-heading-font-family:inherit;--global-primary-nav-font-family:inherit;--global-fallback-font:sans-serif;--global-display-fallback-font:sans-serif;--global-content-width:1290px;--global-content-narrow-width:842px;--global-content-edge-padding:1.5rem;--global-content-boxed-padding:2rem;--global-calc-content-width:calc(1290px - var(--global-content-edge-padding) - var(--global-content-edge-padding) );--wp--style--global--content-size:var(--global-calc-content-width);}.wp-site-blocks{--global-vw:calc( 100vw - ( 0.5 * var(--scrollbar-offset)));}body{background:var(--global-palette9);}body, input, select, optgroup, textarea{font-style:normal;font-weight:normal;font-size:17px;line-height:1.6;font-family:var(--global-body-font-family);color:var(--global-palette4);}.content-bg, body.content-style-unboxed .site{background:var(--global-palette9);}h1,h2,h3,h4,h5,h6{font-family:var(--global-heading-font-family);}h1{font-weight:700;font-size:32px;line-height:1.5;color:var(--global-palette3);}h2{font-weight:700;font-size:28px;line-height:1.5;color:var(--global-palette3);}h3{font-weight:700;font-size:24px;line-height:1.5;color:var(--global-palette3);}h4{font-weight:700;font-size:22px;line-height:1.5;color:var(--global-palette4);}h5{font-weight:700;font-size:20px;line-height:1.5;color:var(--global-palette4);}h6{font-weight:700;font-size:18px;line-height:1.5;color:var(--global-palette5);}.entry-hero .kadence-breadcrumbs{max-width:1290px;}.site-container, .site-header-row-layout-contained, .site-footer-row-layout-contained, .entry-hero-layout-contained, .comments-area, .alignfull > .wp-block-cover__inner-container, .alignwide > .wp-block-cover__inner-container{max-width:var(--global-content-width);}.content-width-narrow .content-container.site-container, .content-width-narrow .hero-container.site-container{max-width:var(--global-content-narrow-width);}@media all and (min-width: 1520px){.wp-site-blocks .content-container  .alignwide{margin-left:-115px;margin-right:-115px;width:unset;max-width:unset;}}@media all and (min-width: 1102px){.content-width-narrow .wp-site-blocks .content-container .alignwide{margin-left:-130px;margin-right:-130px;width:unset;max-width:unset;}}.content-style-boxed .wp-site-blocks .entry-content .alignwide{margin-left:calc( -1 * var( --global-content-boxed-padding ) );margin-right:calc( -1 * var( --global-content-boxed-padding ) );}.content-area{margin-top:5rem;margin-bottom:5rem;}@media all and (max-width: 1024px){.content-area{margin-top:3rem;margin-bottom:3rem;}}@media all and (max-width: 767px){.content-area{margin-top:2rem;margin-bottom:2rem;}}@media all and (max-width: 1024px){:root{--global-content-boxed-padding:2rem;}}@media all and (max-width: 767px){:root{--global-content-boxed-padding:1.5rem;}}.entry-content-wrap{padding:2rem;}@media all and (max-width: 1024px){.entry-content-wrap{padding:2rem;}}@media all and (max-width: 767px){.entry-content-wrap{padding:1.5rem;}}.entry.single-entry{box-shadow:0px 15px 15px -10px rgba(0,0,0,0.05);}.entry.loop-entry{box-shadow:0px 15px 15px -10px rgba(0,0,0,0.05);}.loop-entry .entry-content-wrap{padding:2rem;}@media all and (max-width: 1024px){.loop-entry .entry-content-wrap{padding:2rem;}}@media all and (max-width: 767px){.loop-entry .entry-content-wrap{padding:1.5rem;}}button, .button, .wp-block-button__link, input[type="button"], input[type="reset"], input[type="submit"], .fl-button, .elementor-button-wrapper .elementor-button{box-shadow:0px 0px 0px -7px rgba(0,0,0,0);}button:hover, button:focus, button:active, .button:hover, .button:focus, .button:active, .wp-block-button__link:hover, .wp-block-button__link:focus, .wp-block-button__link:active, input[type="button"]:hover, input[type="button"]:focus, input[type="button"]:active, input[type="reset"]:hover, input[type="reset"]:focus, input[type="reset"]:active, input[type="submit"]:hover, input[type="submit"]:focus, input[type="submit"]:active, .elementor-button-wrapper .elementor-button:hover, .elementor-button-wrapper .elementor-button:focus, .elementor-button-wrapper .elementor-button:active{box-shadow:0px 15px 25px -7px rgba(0,0,0,0.1);}.kb-button.kb-btn-global-outline.kb-btn-global-inherit{padding-top:calc(px - 2px);padding-right:calc(px - 2px);padding-bottom:calc(px - 2px);padding-left:calc(px - 2px);}@media all and (min-width: 1025px){.transparent-header .entry-hero .entry-hero-container-inner{padding-top:80px;}}@media all and (max-width: 1024px){.mobile-transparent-header .entry-hero .entry-hero-container-inner{padding-top:80px;}}@media all and (max-width: 767px){.mobile-transparent-header .entry-hero .entry-hero-container-inner{padding-top:80px;}}
+/* Kadence Header CSS */
+@media all and (max-width: 1024px){.mobile-transparent-header #masthead{position:absolute;left:0px;right:0px;z-index:100;}.kadence-scrollbar-fixer.mobile-transparent-header #masthead{right:var(--scrollbar-offset,0);}.mobile-transparent-header #masthead, .mobile-transparent-header .site-top-header-wrap .site-header-row-container-inner, .mobile-transparent-header .site-main-header-wrap .site-header-row-container-inner, .mobile-transparent-header .site-bottom-header-wrap .site-header-row-container-inner{background:transparent;}.site-header-row-tablet-layout-fullwidth, .site-header-row-tablet-layout-standard{padding:0px;}}@media all and (min-width: 1025px){.transparent-header #masthead{position:absolute;left:0px;right:0px;z-index:100;}.transparent-header.kadence-scrollbar-fixer #masthead{right:var(--scrollbar-offset,0);}.transparent-header #masthead, .transparent-header .site-top-header-wrap .site-header-row-container-inner, .transparent-header .site-main-header-wrap .site-header-row-container-inner, .transparent-header .site-bottom-header-wrap .site-header-row-container-inner{background:transparent;}}.site-branding a.brand img{max-width:200px;}.site-branding a.brand img.svg-logo-image{width:200px;}.site-branding{padding:0px 0px 0px 0px;}#masthead, #masthead .kadence-sticky-header.item-is-fixed:not(.item-at-start):not(.site-header-row-container):not(.site-main-header-wrap), #masthead .kadence-sticky-header.item-is-fixed:not(.item-at-start) > .site-header-row-container-inner{background:#ffffff;}.site-main-header-inner-wrap{min-height:80px;}.header-navigation[class*="header-navigation-style-underline"] .header-menu-container.primary-menu-container>ul>li>a:after{width:calc( 100% - 1.2em);}.main-navigation .primary-menu-container > ul > li.menu-item > a{padding-left:calc(1.2em / 2);padding-right:calc(1.2em / 2);padding-top:0.6em;padding-bottom:0.6em;color:var(--global-palette5);}.main-navigation .primary-menu-container > ul > li.menu-item .dropdown-nav-special-toggle{right:calc(1.2em / 2);}.main-navigation .primary-menu-container > ul > li.menu-item > a:hover{color:var(--global-palette-highlight);}.main-navigation .primary-menu-container > ul > li.menu-item.current-menu-item > a{color:var(--global-palette3);}.header-navigation .header-menu-container ul ul.sub-menu, .header-navigation .header-menu-container ul ul.submenu{background:var(--global-palette3);box-shadow:0px 2px 13px 0px rgba(0,0,0,0.1);}.header-navigation .header-menu-container ul ul li.menu-item, .header-menu-container ul.menu > li.kadence-menu-mega-enabled > ul > li.menu-item > a{border-bottom:1px solid rgba(255,255,255,0.1);}.header-navigation .header-menu-container ul ul li.menu-item > a{width:200px;padding-top:1em;padding-bottom:1em;color:var(--global-palette8);font-size:12px;}.header-navigation .header-menu-container ul ul li.menu-item > a:hover{color:var(--global-palette9);background:var(--global-palette4);}.header-navigation .header-menu-container ul ul li.menu-item.current-menu-item > a{color:var(--global-palette9);background:var(--global-palette4);}.mobile-toggle-open-container .menu-toggle-open{color:var(--global-palette5);padding:0.4em 0.6em 0.4em 0.6em;font-size:14px;}.mobile-toggle-open-container .menu-toggle-open.menu-toggle-style-bordered{border:1px solid currentColor;}.mobile-toggle-open-container .menu-toggle-open .menu-toggle-icon{font-size:20px;}.mobile-toggle-open-container .menu-toggle-open:hover, .mobile-toggle-open-container .menu-toggle-open:focus-visible{color:var(--global-palette-highlight);}.mobile-navigation ul li{font-size:14px;}.mobile-navigation ul li a{padding-top:1em;padding-bottom:1em;}.mobile-navigation ul li > a, .mobile-navigation ul li.menu-item-has-children > .drawer-nav-drop-wrap{color:var(--global-palette8);}.mobile-navigation ul li.current-menu-item > a, .mobile-navigation ul li.current-menu-item.menu-item-has-children > .drawer-nav-drop-wrap{color:var(--global-palette-highlight);}.mobile-navigation ul li.menu-item-has-children .drawer-nav-drop-wrap, .mobile-navigation ul li:not(.menu-item-has-children) a{border-bottom:1px solid rgba(255,255,255,0.1);}.mobile-navigation:not(.drawer-navigation-parent-toggle-true) ul li.menu-item-has-children .drawer-nav-drop-wrap button{border-left:1px solid rgba(255,255,255,0.1);}#mobile-drawer .drawer-header .drawer-toggle{padding:0.6em 0.15em 0.6em 0.15em;font-size:24px;}.search-toggle-open-container .search-toggle-open{color:var(--global-palette5);}.search-toggle-open-container .search-toggle-open.search-toggle-style-bordered{border:1px solid currentColor;}.search-toggle-open-container .search-toggle-open .search-toggle-icon{font-size:1em;}.search-toggle-open-container .search-toggle-open:hover, .search-toggle-open-container .search-toggle-open:focus{color:var(--global-palette-highlight);}#search-drawer .drawer-inner{background:rgba(9, 12, 16, 0.97);}
+/* Kadence Footer CSS */
+.site-middle-footer-wrap .site-footer-row-container-inner{background:#f0f0f0;}.site-middle-footer-inner-wrap{padding-top:30px;padding-bottom:30px;grid-column-gap:30px;grid-row-gap:30px;}.site-middle-footer-inner-wrap .widget{margin-bottom:30px;}.site-middle-footer-inner-wrap .site-footer-section:not(:last-child):after{right:calc(-30px / 2);}.site-bottom-footer-inner-wrap{padding-top:30px;padding-bottom:30px;grid-column-gap:30px;}.site-bottom-footer-inner-wrap .widget{margin-bottom:30px;}.site-bottom-footer-inner-wrap .site-footer-section:not(:last-child):after{right:calc(-30px / 2);}
+/* Kadence Woo CSS */
+.entry-hero.product-hero-section .entry-header{min-height:200px;}.product-title .single-category{font-weight:700;font-size:32px;line-height:1.5;color:var(--global-palette3);}.wp-site-blocks .product-hero-section .extra-title{font-weight:700;font-size:32px;line-height:1.5;}@media all and (max-width: 767px){.woocommerce ul.products:not(.products-list-view), .wp-site-blocks .wc-block-grid:not(.has-2-columns):not(has-1-columns) .wc-block-grid__products{grid-template-columns:repeat(2, minmax(0, 1fr));column-gap:0.5rem;grid-row-gap:0.5rem;}}.woocommerce ul.products.woo-archive-btn-button .product-action-wrap .button:not(.kb-button), .woocommerce ul.products li.woo-archive-btn-button .button:not(.kb-button), .wc-block-grid__product.woo-archive-btn-button .product-details .wc-block-grid__product-add-to-cart .wp-block-button__link{border:2px none transparent;box-shadow:0px 0px 0px 0px rgba(0,0,0,0.0);}.woocommerce ul.products.woo-archive-btn-button .product-action-wrap .button:not(.kb-button):hover, .woocommerce ul.products li.woo-archive-btn-button .button:not(.kb-button):hover, .wc-block-grid__product.woo-archive-btn-button .product-details .wc-block-grid__product-add-to-cart .wp-block-button__link:hover{box-shadow:0px 0px 0px 0px rgba(0,0,0,0);}
+</style>
+<link rel='stylesheet' id='kadence-header-css' href='https://edenrobotinnovation.com/wp-content/themes/kadence/assets/css/header.min.css?ver=1.1.49' media='all' />
+<link rel='stylesheet' id='kadence-content-css' href='https://edenrobotinnovation.com/wp-content/themes/kadence/assets/css/content.min.css?ver=1.1.49' media='all' />
+<link rel='stylesheet' id='kadence-comments-css' href='https://edenrobotinnovation.com/wp-content/themes/kadence/assets/css/comments.min.css?ver=1.1.49' media='all' />
+<link rel='stylesheet' id='kadence-related-posts-css' href='https://edenrobotinnovation.com/wp-content/themes/kadence/assets/css/related-posts.min.css?ver=1.1.49' media='all' />
+<link rel='stylesheet' id='kad-splide-css' href='https://edenrobotinnovation.com/wp-content/themes/kadence/assets/css/kadence-splide.min.css?ver=1.1.49' media='all' />
+<link rel='stylesheet' id='kadence-woocommerce-css' href='https://edenrobotinnovation.com/wp-content/themes/kadence/assets/css/woocommerce.min.css?ver=1.1.49' media='all' />
+<link rel='stylesheet' id='kadence-footer-css' href='https://edenrobotinnovation.com/wp-content/themes/kadence/assets/css/footer.min.css?ver=1.1.49' media='all' />
+<script src="https://edenrobotinnovation.com/wp-includes/js/dist/vendor/wp-polyfill-inert.min.js?ver=3.1.2" id="wp-polyfill-inert-js"></script>
+<script src="https://edenrobotinnovation.com/wp-includes/js/dist/vendor/regenerator-runtime.min.js?ver=0.14.0" id="regenerator-runtime-js"></script>
+<script src="https://edenrobotinnovation.com/wp-includes/js/dist/vendor/wp-polyfill.min.js?ver=3.15.0" id="wp-polyfill-js"></script>
+<script src="https://edenrobotinnovation.com/wp-includes/js/dist/hooks.min.js?ver=c6aec9a8d4e5a5d543a1" id="wp-hooks-js"></script>
+<script src="https://stats.wp.com/w.js?ver=202351" id="woo-tracks-js"></script>
+<script src="https://edenrobotinnovation.com/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
+<script src="https://edenrobotinnovation.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
+<script src="https://edenrobotinnovation.com/wp-content/plugins/woocommerce/assets/js/jquery-blockui/jquery.blockUI.min.js?ver=2.7.0-wc.8.4.0" id="jquery-blockui-js" defer data-wp-strategy="defer"></script>
+<script id="wc-add-to-cart-js-extra">
+var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/?wc-ajax=%%endpoint%%","i18n_view_cart":"View cart","cart_url":"https:\/\/edenrobotinnovation.com\/cart\/","is_cart":"","cart_redirect_after_add":"no"};
+</script>
+<script src="https://edenrobotinnovation.com/wp-content/plugins/woocommerce/assets/js/frontend/add-to-cart.min.js?ver=8.4.0" id="wc-add-to-cart-js" defer data-wp-strategy="defer"></script>
+<script src="https://edenrobotinnovation.com/wp-content/plugins/woocommerce/assets/js/zoom/jquery.zoom.min.js?ver=1.7.21-wc.8.4.0" id="zoom-js" defer data-wp-strategy="defer"></script>
+<script src="https://edenrobotinnovation.com/wp-content/plugins/woocommerce/assets/js/flexslider/jquery.flexslider.min.js?ver=2.7.2-wc.8.4.0" id="flexslider-js" defer data-wp-strategy="defer"></script>
+<script src="https://edenrobotinnovation.com/wp-content/plugins/woocommerce/assets/js/photoswipe/photoswipe.min.js?ver=4.1.1-wc.8.4.0" id="photoswipe-js" defer data-wp-strategy="defer"></script>
+<script src="https://edenrobotinnovation.com/wp-content/plugins/woocommerce/assets/js/photoswipe/photoswipe-ui-default.min.js?ver=4.1.1-wc.8.4.0" id="photoswipe-ui-default-js" defer data-wp-strategy="defer"></script>
+<script id="wc-single-product-js-extra">
+var wc_single_product_params = {"i18n_required_rating_text":"Please select a rating","review_rating_required":"yes","flexslider":{"rtl":false,"animation":"slide","smoothHeight":true,"directionNav":false,"controlNav":"thumbnails","slideshow":false,"animationSpeed":500,"animationLoop":false,"allowOneSlide":false},"zoom_enabled":"1","zoom_options":[],"photoswipe_enabled":"1","photoswipe_options":{"shareEl":false,"closeOnScroll":false,"history":false,"hideAnimationDuration":0,"showAnimationDuration":0},"flexslider_enabled":"1"};
+</script>
+<script src="https://edenrobotinnovation.com/wp-content/plugins/woocommerce/assets/js/frontend/single-product.min.js?ver=8.4.0" id="wc-single-product-js" defer data-wp-strategy="defer"></script>
+<script src="https://edenrobotinnovation.com/wp-content/plugins/woocommerce/assets/js/js-cookie/js.cookie.min.js?ver=2.1.4-wc.8.4.0" id="js-cookie-js" defer data-wp-strategy="defer"></script>
+<script id="woocommerce-js-extra">
+var woocommerce_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/?wc-ajax=%%endpoint%%"};
+</script>
+<script src="https://edenrobotinnovation.com/wp-content/plugins/woocommerce/assets/js/frontend/woocommerce.min.js?ver=8.4.0" id="woocommerce-js" defer data-wp-strategy="defer"></script>
+
+<!-- Google Analytics snippet added by Site Kit -->
+<script src="https://www.googletagmanager.com/gtag/js?id=GT-57Z78Q2" id="google_gtagjs-js" async></script>
+<script id="google_gtagjs-js-after">
+window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}
+gtag('set', 'linker', {"domains":["edenrobotinnovation.com"]} );
+gtag("js", new Date());
+gtag("set", "developer_id.dZTNiMT", true);
+gtag("config", "GT-57Z78Q2");
+</script>
+
+<!-- End Google Analytics snippet added by Site Kit -->
+<link rel="https://api.w.org/" href="https://edenrobotinnovation.com/wp-json/" /><link rel="alternate" type="application/json" href="https://edenrobotinnovation.com/wp-json/wp/v2/product/104" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://edenrobotinnovation.com/xmlrpc.php?rsd" />
+
+<link rel='shortlink' href='https://edenrobotinnovation.com/?p=104' />
+<link rel="alternate" type="application/json+oembed" href="https://edenrobotinnovation.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fedenrobotinnovation.com%2Fshop%2Feden-robotics-foxi-companion-robot%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://edenrobotinnovation.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fedenrobotinnovation.com%2Fshop%2Feden-robotics-foxi-companion-robot%2F&#038;format=xml" />
+<meta name="generator" content="Site Kit by Google 1.115.0" />	<noscript><style>.woocommerce-product-gallery{ opacity: 1 !important; }</style></noscript>
+	<link rel='stylesheet' id='kadence-fonts-css' href='https://fonts.googleapis.com/css?family=Merriweather%20Sans:regular,700&#038;display=swap' media='all' />
+<link rel="icon" href="https://edenrobotinnovation.com/wp-content/uploads/2023/06/cropped-Favicon-32x32.jpg" sizes="32x32" />
+<link rel="icon" href="https://edenrobotinnovation.com/wp-content/uploads/2023/06/cropped-Favicon-192x192.jpg" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://edenrobotinnovation.com/wp-content/uploads/2023/06/cropped-Favicon-180x180.jpg" />
+<meta name="msapplication-TileImage" content="https://edenrobotinnovation.com/wp-content/uploads/2023/06/cropped-Favicon-270x270.jpg" />
+</head>
+
+<body class="product-template-default single single-product postid-104 wp-custom-logo wp-embed-responsive theme-kadence woocommerce woocommerce-page woocommerce-no-js footer-on-bottom hide-focus-outline link-style-standard content-title-style-normal content-width-normal content-style-unboxed content-vertical-padding-show non-transparent-header mobile-non-transparent-header product-tab-style-normal product-variation-style-horizontal kadence-cart-button-normal">
+<div id="wrapper" class="site wp-site-blocks">
+			<a class="skip-link screen-reader-text scroll-ignore" href="#main">Skip to content</a>
+		<header id="masthead" class="site-header" role="banner" itemtype="https://schema.org/WPHeader" itemscope>
+	<div id="main-header" class="site-header-wrap">
+		<div class="site-header-inner-wrap">
+			<div class="site-header-upper-wrap">
+				<div class="site-header-upper-inner-wrap">
+					<div class="site-main-header-wrap site-header-row-container site-header-focus-item site-header-row-layout-standard" data-section="kadence_customizer_header_main">
+	<div class="site-header-row-container-inner">
+				<div class="site-container">
+			<div class="site-main-header-inner-wrap site-header-row site-header-row-has-sides site-header-row-center-column">
+									<div class="site-header-main-section-left site-header-section site-header-section-left">
+						<div class="site-header-item site-header-focus-item" data-section="title_tagline">
+	<div class="site-branding branding-layout-standard site-brand-logo-only"><a class="brand has-logo-image" href="https://edenrobotinnovation.com/" rel="home"><img width="300" height="75" src="https://edenrobotinnovation.com/wp-content/uploads/2023/06/Logo300.png" class="custom-logo" alt="Eden Robot Innovation" decoding="async" /></a></div></div><!-- data-section="title_tagline" -->
+							<div class="site-header-main-section-left-center site-header-section site-header-section-left-center">
+															</div>
+												</div>
+													<div class="site-header-main-section-center site-header-section site-header-section-center">
+						<div class="site-header-item site-header-focus-item site-header-item-main-navigation header-navigation-layout-stretch-false header-navigation-layout-fill-stretch-false" data-section="kadence_customizer_primary_navigation">
+		<nav id="site-navigation" class="main-navigation header-navigation nav--toggle-sub header-navigation-style-standard header-navigation-dropdown-animation-none" role="navigation" aria-label="Primary Navigation">
+				<div class="primary-menu-container header-menu-container">
+			<ul id="primary-menu" class="menu"><li id="menu-item-582" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-582"><a href="#"><span class="nav-drop-title-wrap">Robots<span class="dropdown-nav-toggle"><span class="kadence-svg-iconset svg-baseline"><svg aria-hidden="true" class="kadence-svg-icon kadence-arrow-down-svg" fill="currentColor" version="1.1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><title>Expand</title><path d="M5.293 9.707l6 6c0.391 0.391 1.024 0.391 1.414 0l6-6c0.391-0.391 0.391-1.024 0-1.414s-1.024-0.391-1.414 0l-5.293 5.293-5.293-5.293c-0.391-0.391-1.024-0.391-1.414 0s-0.391 1.024 0 1.414z"></path>
+				</svg></span></span></span></a>
+<ul class="sub-menu">
+	<li id="menu-item-583" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-583"><a href="https://edenrobotinnovation.com/product-category/ai-tech/">AI-Tech</a></li>
+	<li id="menu-item-584" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-584"><a href="https://edenrobotinnovation.com/product-category/eden-robotics/">Eden Robotics</a></li>
+	<li id="menu-item-586" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-586"><a href="https://edenrobotinnovation.com/product-category/irobot/">iRobot</a></li>
+	<li id="menu-item-587" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-587"><a href="https://edenrobotinnovation.com/product-category/joy-for-all/">Joy For All</a></li>
+	<li id="menu-item-589" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-589"><a href="https://edenrobotinnovation.com/product-category/sanbot-robotics/">Sanbot Robotics</a></li>
+	<li id="menu-item-590" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-590"><a href="https://edenrobotinnovation.com/product-category/softbank-robotics/">SoftBank Robotics</a></li>
+	<li id="menu-item-591" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-591"><a href="https://edenrobotinnovation.com/product-category/ubtech-robotics/">UBTech Robotics</a></li>
+</ul>
+</li>
+<li id="menu-item-585" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-585"><a href="https://edenrobotinnovation.com/product-category/humanoid-robots/">Humanoid Robots</a></li>
+<li id="menu-item-592" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-592"><a href="https://edenrobotinnovation.com/product-category/utility-robots-for-sale/">Utility Robots</a></li>
+<li id="menu-item-588" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-588"><a href="https://edenrobotinnovation.com/product-category/robot-pets/">Robot Pets</a></li>
+<li id="menu-item-593" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat current-product-ancestor menu-item-has-children menu-item-593"><a href="https://edenrobotinnovation.com/product-category/companion-robot-for-adults/"><span class="nav-drop-title-wrap">companion robot<span class="dropdown-nav-toggle"><span class="kadence-svg-iconset svg-baseline"><svg aria-hidden="true" class="kadence-svg-icon kadence-arrow-down-svg" fill="currentColor" version="1.1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><title>Expand</title><path d="M5.293 9.707l6 6c0.391 0.391 1.024 0.391 1.414 0l6-6c0.391-0.391 0.391-1.024 0-1.414s-1.024-0.391-1.414 0l-5.293 5.293-5.293-5.293c-0.391-0.391-1.024-0.391-1.414 0s-0.391 1.024 0 1.414z"></path>
+				</svg></span></span></span></a>
+<ul class="sub-menu">
+	<li id="menu-item-594" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-594"><a href="https://edenrobotinnovation.com/product-category/companion-robot-for-adults/ai-tech-companion-robots/">AI-Tech</a></li>
+	<li id="menu-item-595" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat current-product-ancestor current-menu-parent current-product-parent menu-item-595"><a href="https://edenrobotinnovation.com/product-category/companion-robot-for-adults/eden-robotics-companion-robots/">Eden Robotics</a></li>
+	<li id="menu-item-596" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-596"><a href="https://edenrobotinnovation.com/product-category/companion-robot-for-adults/realdoll-companion-robot/">RealDoll</a></li>
+</ul>
+</li>
+</ul>		</div>
+	</nav><!-- #site-navigation -->
+	</div><!-- data-section="primary_navigation" -->
+					</div>
+													<div class="site-header-main-section-right site-header-section site-header-section-right">
+													<div class="site-header-main-section-right-center site-header-section site-header-section-right-center">
+															</div>
+							<div class="site-header-item site-header-focus-item" data-section="kadence_customizer_cart">
+	<div class="header-cart-wrap kadence-header-cart"><span class="header-cart-empty-check header-cart-is-empty-true"></span><div class="header-cart-inner-wrap cart-show-label-false cart-style-link"><a href="https://edenrobotinnovation.com/cart/" aria-label="Shopping Cart" class="header-cart-button"><span class="kadence-svg-iconset"><svg class="kadence-svg-icon kadence-shopping-bag-svg" fill="currentColor" version="1.1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><title>Shopping Cart</title><path d="M19 5h-14l1.5-2h11zM21.794 5.392l-2.994-3.992c-0.196-0.261-0.494-0.399-0.8-0.4h-12c-0.326 0-0.616 0.156-0.8 0.4l-2.994 3.992c-0.043 0.056-0.081 0.117-0.111 0.182-0.065 0.137-0.096 0.283-0.095 0.426v14c0 0.828 0.337 1.58 0.879 2.121s1.293 0.879 2.121 0.879h14c0.828 0 1.58-0.337 2.121-0.879s0.879-1.293 0.879-2.121v-14c0-0.219-0.071-0.422-0.189-0.585-0.004-0.005-0.007-0.010-0.011-0.015zM4 7h16v13c0 0.276-0.111 0.525-0.293 0.707s-0.431 0.293-0.707 0.293h-14c-0.276 0-0.525-0.111-0.707-0.293s-0.293-0.431-0.293-0.707zM15 10c0 0.829-0.335 1.577-0.879 2.121s-1.292 0.879-2.121 0.879-1.577-0.335-2.121-0.879-0.879-1.292-0.879-2.121c0-0.552-0.448-1-1-1s-1 0.448-1 1c0 1.38 0.561 2.632 1.464 3.536s2.156 1.464 3.536 1.464 2.632-0.561 3.536-1.464 1.464-2.156 1.464-3.536c0-0.552-0.448-1-1-1s-1 0.448-1 1z"></path>
+				</svg></span><span class="header-cart-total header-cart-is-empty-true">0</span></a></div></div></div><!-- data-section="cart" -->
+<div class="site-header-item site-header-focus-item" data-section="kadence_customizer_header_search">
+		<div class="search-toggle-open-container">
+						<button class="search-toggle-open drawer-toggle search-toggle-style-default" aria-label="View Search Form" data-toggle-target="#search-drawer" data-toggle-body-class="showing-popup-drawer-from-full" aria-expanded="false" data-set-focus="#search-drawer .search-field"
+					>
+						<span class="search-toggle-icon"><span class="kadence-svg-iconset"><svg aria-hidden="true" class="kadence-svg-icon kadence-search-svg" fill="currentColor" version="1.1" xmlns="http://www.w3.org/2000/svg" width="26" height="28" viewBox="0 0 26 28"><title>Search</title><path d="M18 13c0-3.859-3.141-7-7-7s-7 3.141-7 7 3.141 7 7 7 7-3.141 7-7zM26 26c0 1.094-0.906 2-2 2-0.531 0-1.047-0.219-1.406-0.594l-5.359-5.344c-1.828 1.266-4.016 1.937-6.234 1.937-6.078 0-11-4.922-11-11s4.922-11 11-11 11 4.922 11 11c0 2.219-0.672 4.406-1.937 6.234l5.359 5.359c0.359 0.359 0.578 0.875 0.578 1.406z"></path>
+				</svg></span></span>
+		</button>
+	</div>
+	</div><!-- data-section="header_search" -->
+					</div>
+							</div>
+		</div>
+	</div>
+</div>
+				</div>
+			</div>
+					</div>
+	</div>
+	
+<div id="mobile-header" class="site-mobile-header-wrap">
+	<div class="site-header-inner-wrap">
+		<div class="site-header-upper-wrap">
+			<div class="site-header-upper-inner-wrap">
+			<div class="site-main-header-wrap site-header-focus-item site-header-row-layout-standard site-header-row-tablet-layout-default site-header-row-mobile-layout-default ">
+	<div class="site-header-row-container-inner">
+		<div class="site-container">
+			<div class="site-main-header-inner-wrap site-header-row site-header-row-has-sides site-header-row-no-center">
+									<div class="site-header-main-section-left site-header-section site-header-section-left">
+						<div class="site-header-item site-header-focus-item" data-section="title_tagline">
+	<div class="site-branding mobile-site-branding branding-layout-standard branding-tablet-layout-inherit site-brand-logo-only branding-mobile-layout-inherit"><a class="brand has-logo-image" href="https://edenrobotinnovation.com/" rel="home"><img width="300" height="75" src="https://edenrobotinnovation.com/wp-content/uploads/2023/06/Logo300.png" class="custom-logo" alt="Eden Robot Innovation" decoding="async" /></a></div></div><!-- data-section="title_tagline" -->
+					</div>
+																	<div class="site-header-main-section-right site-header-section site-header-section-right">
+						<div class="site-header-item site-header-focus-item site-header-item-navgation-popup-toggle" data-section="kadence_customizer_mobile_trigger">
+		<div class="mobile-toggle-open-container">
+						<button id="mobile-toggle" class="menu-toggle-open drawer-toggle menu-toggle-style-default" aria-label="Open menu" data-toggle-target="#mobile-drawer" data-toggle-body-class="showing-popup-drawer-from-right" aria-expanded="false" data-set-focus=".menu-toggle-close"
+					>
+						<span class="menu-toggle-icon"><span class="kadence-svg-iconset"><svg aria-hidden="true" class="kadence-svg-icon kadence-menu-svg" fill="currentColor" version="1.1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><title>Toggle Menu</title><path d="M3 13h18c0.552 0 1-0.448 1-1s-0.448-1-1-1h-18c-0.552 0-1 0.448-1 1s0.448 1 1 1zM3 7h18c0.552 0 1-0.448 1-1s-0.448-1-1-1h-18c-0.552 0-1 0.448-1 1s0.448 1 1 1zM3 19h18c0.552 0 1-0.448 1-1s-0.448-1-1-1h-18c-0.552 0-1 0.448-1 1s0.448 1 1 1z"></path>
+				</svg></span></span>
+		</button>
+	</div>
+	</div><!-- data-section="mobile_trigger" -->
+					</div>
+							</div>
+		</div>
+	</div>
+</div>
+			</div>
+		</div>
+			</div>
+</div>
+</header><!-- #masthead -->
+
+	<div id="inner-wrap" class="wrap hfeed kt-clear">
+		
+	<div id="primary" class="content-area"><div class="content-container site-container"><main id="main" class="site-main" role="main">
+					
+			<div class="woocommerce-notices-wrapper"></div><div class="product-title product-above"><nav id="kadence-breadcrumbs" aria-label="Breadcrumbs"  class="kadence-breadcrumbs"><div class="kadence-breadcrumb-container"><span><a href="https://edenrobotinnovation.com/" itemprop="url" class="kadence-bc-home" ><span>Home</span></a></span> <span class="bc-delimiter">/</span> <span><a href="https://edenrobotinnovation.com/robotics-engineering/" itemprop="url" ><span>Shop</span></a></span> <span class="bc-delimiter">/</span> <span><a href="https://edenrobotinnovation.com/product-category/companion-robot-for-adults/" itemprop="url" ><span>companion robot</span></a></span> <span class="bc-delimiter">/</span> <span><a href="https://edenrobotinnovation.com/product-category/companion-robot-for-adults/eden-robotics-companion-robots/" itemprop="url" ><span>Eden Robotics</span></a></span> <span class="bc-delimiter">/</span> <span class="kadence-bread-current">EDEN ROBOTICS Foxi Companion Robot</span></div></nav></div><div id="product-104" class="entry content-bg entry-content-wrap product type-product post-104 status-publish first instock product_cat-eden-robotics-companion-robots has-post-thumbnail shipping-taxable purchasable product-type-simple">
+
+	<div class="woocommerce-product-gallery woocommerce-product-gallery--with-images woocommerce-product-gallery--columns-4 images gallery-has-thumbnails" data-columns="4" style="opacity: 0; transition: opacity .25s ease-in-out;">
+	<div class="woocommerce-product-gallery__wrapper">
+		<div data-thumb="https://edenrobotinnovation.com/wp-content/uploads/2023/06/er-foxi01-100x100.jpg" data-thumb-alt="" class="woocommerce-product-gallery__image"><a href="https://edenrobotinnovation.com/wp-content/uploads/2023/06/er-foxi01.jpg"><img width="600" height="600" src="https://edenrobotinnovation.com/wp-content/uploads/2023/06/er-foxi01-600x600.jpg" class="wp-post-image" alt="" title="er-foxi01.jpg" data-caption="" data-src="https://edenrobotinnovation.com/wp-content/uploads/2023/06/er-foxi01.jpg" data-large_image="https://edenrobotinnovation.com/wp-content/uploads/2023/06/er-foxi01.jpg" data-large_image_width="700" data-large_image_height="700" decoding="async" fetchpriority="high" srcset="https://edenrobotinnovation.com/wp-content/uploads/2023/06/er-foxi01-600x600.jpg 600w, https://edenrobotinnovation.com/wp-content/uploads/2023/06/er-foxi01-300x300.jpg 300w, https://edenrobotinnovation.com/wp-content/uploads/2023/06/er-foxi01-100x100.jpg 100w, https://edenrobotinnovation.com/wp-content/uploads/2023/06/er-foxi01-150x150.jpg 150w, https://edenrobotinnovation.com/wp-content/uploads/2023/06/er-foxi01.jpg 700w" sizes="(max-width: 600px) 100vw, 600px" /></a></div><div data-thumb="https://edenrobotinnovation.com/wp-content/uploads/2023/06/er-foxi02-100x100.jpg" data-thumb-alt="" class="woocommerce-product-gallery__image"><a href="https://edenrobotinnovation.com/wp-content/uploads/2023/06/er-foxi02.jpg"><img width="600" height="600" src="https://edenrobotinnovation.com/wp-content/uploads/2023/06/er-foxi02-600x600.jpg" class="" alt="" title="er-foxi02" data-caption="" data-src="https://edenrobotinnovation.com/wp-content/uploads/2023/06/er-foxi02.jpg" data-large_image="https://edenrobotinnovation.com/wp-content/uploads/2023/06/er-foxi02.jpg" data-large_image_width="700" data-large_image_height="700" decoding="async" srcset="https://edenrobotinnovation.com/wp-content/uploads/2023/06/er-foxi02-600x600.jpg 600w, https://edenrobotinnovation.com/wp-content/uploads/2023/06/er-foxi02-300x300.jpg 300w, https://edenrobotinnovation.com/wp-content/uploads/2023/06/er-foxi02-100x100.jpg 100w, https://edenrobotinnovation.com/wp-content/uploads/2023/06/er-foxi02-150x150.jpg 150w, https://edenrobotinnovation.com/wp-content/uploads/2023/06/er-foxi02.jpg 700w" sizes="(max-width: 600px) 100vw, 600px" /></a></div><div data-thumb="https://edenrobotinnovation.com/wp-content/uploads/2023/06/er-foxi03-100x100.jpg" data-thumb-alt="" class="woocommerce-product-gallery__image"><a href="https://edenrobotinnovation.com/wp-content/uploads/2023/06/er-foxi03.jpg"><img width="600" height="600" src="https://edenrobotinnovation.com/wp-content/uploads/2023/06/er-foxi03-600x600.jpg" class="" alt="" title="er-foxi03" data-caption="" data-src="https://edenrobotinnovation.com/wp-content/uploads/2023/06/er-foxi03.jpg" data-large_image="https://edenrobotinnovation.com/wp-content/uploads/2023/06/er-foxi03.jpg" data-large_image_width="700" data-large_image_height="700" decoding="async" srcset="https://edenrobotinnovation.com/wp-content/uploads/2023/06/er-foxi03-600x600.jpg 600w, https://edenrobotinnovation.com/wp-content/uploads/2023/06/er-foxi03-300x300.jpg 300w, https://edenrobotinnovation.com/wp-content/uploads/2023/06/er-foxi03-100x100.jpg 100w, https://edenrobotinnovation.com/wp-content/uploads/2023/06/er-foxi03-150x150.jpg 150w, https://edenrobotinnovation.com/wp-content/uploads/2023/06/er-foxi03.jpg 700w" sizes="(max-width: 600px) 100vw, 600px" /></a></div>	</div>
+</div>
+
+	<div class="summary entry-summary">
+		<h1 class="product_title entry-title">EDEN ROBOTICS Foxi Companion Robot</h1><p class="price"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">&#36;</span>13,449.99</bdi></span></p>
+<div class="woocommerce-product-details__short-description">
+	<p>Companion robot Foxi is the next technological frontier in personal robotics. She can be your own household maid, lover, companion, and anything else you want her to be.</p>
+</div>
+
+	
+	<form class="cart" action="https://edenrobotinnovation.com/shop/eden-robotics-foxi-companion-robot/" method="post" enctype='multipart/form-data'>
+		
+		<div class="quantity">
+		<label class="screen-reader-text" for="quantity_65807eacc6d70">EDEN ROBOTICS Foxi Companion Robot quantity</label>
+	<input
+		type="number"
+				id="quantity_65807eacc6d70"
+		class="input-text qty text"
+		name="quantity"
+		value="1"
+		aria-label="Product quantity"
+		size="4"
+		min="1"
+		max=""
+					step="1"
+			placeholder=""
+			inputmode="numeric"
+			autocomplete="off"
+			/>
+	</div>
+
+		<button type="submit" name="add-to-cart" value="104" class="single_add_to_cart_button button alt">Add to cart</button>
+
+			</form>
+
+	
+<div class="product_meta">
+
+	
+	
+	<span class="posted_in">Category: <a href="https://edenrobotinnovation.com/product-category/companion-robot-for-adults/eden-robotics-companion-robots/" rel="tag">Eden Robotics</a></span>
+	
+	
+</div>
+	</div>
+
+	
+	<div class="woocommerce-tabs wc-tabs-wrapper">
+		<ul class="tabs wc-tabs" role="tablist">
+							<li class="description_tab" id="tab-title-description" role="tab" aria-controls="tab-description">
+					<a href="#tab-description">
+						Description					</a>
+				</li>
+							<li class="reviews_tab" id="tab-title-reviews" role="tab" aria-controls="tab-reviews">
+					<a href="#tab-reviews">
+						Reviews (0)					</a>
+				</li>
+					</ul>
+					<div class="woocommerce-Tabs-panel woocommerce-Tabs-panel--description panel entry-content wc-tab" id="tab-description" role="tabpanel" aria-labelledby="tab-title-description">
+				
+	<h2>Description</h2>
+
+<p>Discover the unlimited possibilities this companion robot has to offer. Foxi is specifically designed to be your own personal assistant. Artificial-intelligence and a robotic skeleton allow her to perform human-like motions and behaviors.</p>
+<p>Realistic female synthetic robot</p>
+<p>Skin made of high-quality TPE silicone rubber to offer the most realistic skin sensation, softness, and safety</p>
+<p>21-degree robotic skeleton so the doll can move, walk, and behave like a real woman</p>
+<p>Capable of human-like walking</p>
+<p>Advanced artificial-intelligence for robot speech, object recognition and interaction</p>
+<p>Several sensors are placed around the doll to interact and communicate with you providing the highest level of safety</p>
+<p>Can be operated with typed commands and spoken commands over WiFi from anywhere</p>
+<p>Easy-to-use software, no programming skills necessary</p>
+<p>Battery provides 4 hours of continuous operation</p>
+<p>Powerful microcomputer for robot control</p>
+<p>Height: 4&#8217;9&#8243;</p>
+			</div>
+					<div class="woocommerce-Tabs-panel woocommerce-Tabs-panel--reviews panel entry-content wc-tab" id="tab-reviews" role="tabpanel" aria-labelledby="tab-title-reviews">
+				<div id="reviews" class="woocommerce-Reviews">
+	<div id="comments">
+		<h2 class="woocommerce-Reviews-title">
+			Reviews		</h2>
+
+					<p class="woocommerce-noreviews">There are no reviews yet.</p>
+			</div>
+
+			<div id="review_form_wrapper">
+			<div id="review_form">
+					<div id="respond" class="comment-respond">
+		<span id="reply-title" class="comment-reply-title">Be the first to review &ldquo;EDEN ROBOTICS Foxi Companion Robot&rdquo; <small><a rel="nofollow" id="cancel-comment-reply-link" href="/shop/eden-robotics-foxi-companion-robot/#respond" style="display:none;">Cancel reply</a></small></span><form action="https://edenrobotinnovation.com/wp-comments-post.php" method="post" id="commentform" class="comment-form" novalidate><p class="comment-notes"><span id="email-notes">Your email address will not be published.</span> <span class="required-field-message">Required fields are marked <span class="required">*</span></span></p><div class="comment-form-rating"><label for="rating">Your rating&nbsp;<span class="required">*</span></label><select name="rating" id="rating" required>
+						<option value="">Rate&hellip;</option>
+						<option value="5">Perfect</option>
+						<option value="4">Good</option>
+						<option value="3">Average</option>
+						<option value="2">Not that bad</option>
+						<option value="1">Very poor</option>
+					</select></div><p class="comment-form-comment"><label for="comment">Your review&nbsp;<span class="required">*</span></label><textarea id="comment" name="comment" cols="45" rows="8" required></textarea></p><p class="comment-form-author"><label for="author">Name&nbsp;<span class="required">*</span></label><input id="author" name="author" type="text" value="" size="30" required /></p>
+<p class="comment-form-email"><label for="email">Email&nbsp;<span class="required">*</span></label><input id="email" name="email" type="email" value="" size="30" required /></p>
+<p class="comment-form-cookies-consent"><input id="wp-comment-cookies-consent" name="wp-comment-cookies-consent" type="checkbox" value="yes" /> <label for="wp-comment-cookies-consent">Save my name, email, and website in this browser for the next time I comment.</label></p>
+<p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="Submit" /> <input type='hidden' name='comment_post_ID' value='104' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+</p></form>	</div><!-- #respond -->
+				</div>
+		</div>
+	
+	<div class="clear"></div>
+</div>
+			</div>
+		
+			</div>
+
+
+	<section class="related products">
+
+					<h2>Related products</h2>
+				
+		<ul class="products content-wrap product-archive grid-cols grid-ss-col-2 grid-sm-col-3 grid-lg-col-4 woo-archive-action-on-hover woo-archive-btn-text  woo-archive-image-hover-none">
+			
+					<li class="entry content-bg loop-entry product type-product post-108 status-publish first instock product_cat-eden-robotics-companion-robots has-post-thumbnail shipping-taxable purchasable product-type-simple">
+	<a href="https://edenrobotinnovation.com/shop/eden-robotics-exoskeleton/" class="woocommerce-loop-image-link woocommerce-LoopProduct-link woocommerce-loop-product__link"><img width="300" height="300" src="https://edenrobotinnovation.com/wp-content/uploads/2023/06/er-exoskeleton01-300x300.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="" decoding="async" loading="lazy" srcset="https://edenrobotinnovation.com/wp-content/uploads/2023/06/er-exoskeleton01-300x300.jpg 300w, https://edenrobotinnovation.com/wp-content/uploads/2023/06/er-exoskeleton01-100x100.jpg 100w, https://edenrobotinnovation.com/wp-content/uploads/2023/06/er-exoskeleton01-600x600.jpg 600w, https://edenrobotinnovation.com/wp-content/uploads/2023/06/er-exoskeleton01-150x150.jpg 150w, https://edenrobotinnovation.com/wp-content/uploads/2023/06/er-exoskeleton01.jpg 700w" sizes="(max-width: 300px) 100vw, 300px" /></a><div class="product-details content-bg entry-content-wrap"><h2 class="woocommerce-loop-product__title"><a href="https://edenrobotinnovation.com/shop/eden-robotics-exoskeleton/" class="woocommerce-LoopProduct-link-title woocommerce-loop-product__title_ink">EDEN ROBOTICS Exoskeleton</a></h2>
+	<span class="price"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">&#36;</span>4,009.99</bdi></span></span>
+<div class="product-action-wrap"><a href="?add-to-cart=108" data-quantity="1" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-product_id="108" data-product_sku="" aria-label="Add to cart: &ldquo;EDEN ROBOTICS Exoskeleton&rdquo;" aria-describedby="" rel="nofollow">Add to cart<span class="kadence-svg-iconset svg-baseline"><svg aria-hidden="true" class="kadence-svg-icon kadence-arrow-right-alt-svg" fill="currentColor" version="1.1" xmlns="http://www.w3.org/2000/svg" width="27" height="28" viewBox="0 0 27 28"><title>Continue</title><path d="M27 13.953c0 0.141-0.063 0.281-0.156 0.375l-6 5.531c-0.156 0.141-0.359 0.172-0.547 0.094-0.172-0.078-0.297-0.25-0.297-0.453v-3.5h-19.5c-0.281 0-0.5-0.219-0.5-0.5v-3c0-0.281 0.219-0.5 0.5-0.5h19.5v-3.5c0-0.203 0.109-0.375 0.297-0.453s0.391-0.047 0.547 0.078l6 5.469c0.094 0.094 0.156 0.219 0.156 0.359v0z"></path>
+				</svg></span><span class="kadence-svg-iconset svg-baseline"><svg class="kadence-svg-icon kadence-spinner-svg" fill="currentColor" version="1.1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><title>Loading</title><path d="M16 6h-6l2.243-2.243c-1.133-1.133-2.64-1.757-4.243-1.757s-3.109 0.624-4.243 1.757c-1.133 1.133-1.757 2.64-1.757 4.243s0.624 3.109 1.757 4.243c1.133 1.133 2.64 1.757 4.243 1.757s3.109-0.624 4.243-1.757c0.095-0.095 0.185-0.192 0.273-0.292l1.505 1.317c-1.466 1.674-3.62 2.732-6.020 2.732-4.418 0-8-3.582-8-8s3.582-8 8-8c2.209 0 4.209 0.896 5.656 2.344l2.343-2.344v6z"></path>
+				</svg></span><span class="kadence-svg-iconset svg-baseline"><svg class="kadence-svg-icon kadence-check-svg" fill="currentColor" version="1.1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><title>Done</title><path d="M14 2.5l-8.5 8.5-3.5-3.5-1.5 1.5 5 5 10-10z"></path>
+				</svg></span></a></div></div></li>
+
+			
+					<li class="entry content-bg loop-entry product type-product post-102 status-publish instock product_cat-eden-robotics-companion-robots has-post-thumbnail shipping-taxable purchasable product-type-simple">
+	<a href="https://edenrobotinnovation.com/shop/eden-robotics-mimi-companion-robot/" class="woocommerce-loop-image-link woocommerce-LoopProduct-link woocommerce-loop-product__link"><img width="300" height="300" src="https://edenrobotinnovation.com/wp-content/uploads/2023/06/er-mimi-300x300.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="" decoding="async" loading="lazy" srcset="https://edenrobotinnovation.com/wp-content/uploads/2023/06/er-mimi-300x300.jpg 300w, https://edenrobotinnovation.com/wp-content/uploads/2023/06/er-mimi-100x100.jpg 100w, https://edenrobotinnovation.com/wp-content/uploads/2023/06/er-mimi-600x600.jpg 600w, https://edenrobotinnovation.com/wp-content/uploads/2023/06/er-mimi-150x150.jpg 150w, https://edenrobotinnovation.com/wp-content/uploads/2023/06/er-mimi.jpg 700w" sizes="(max-width: 300px) 100vw, 300px" /></a><div class="product-details content-bg entry-content-wrap"><h2 class="woocommerce-loop-product__title"><a href="https://edenrobotinnovation.com/shop/eden-robotics-mimi-companion-robot/" class="woocommerce-LoopProduct-link-title woocommerce-loop-product__title_ink">EDEN ROBOTICS Mimi Companion Robot</a></h2>
+	<span class="price"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">&#36;</span>11,500.80</bdi></span></span>
+<div class="product-action-wrap"><a href="?add-to-cart=102" data-quantity="1" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-product_id="102" data-product_sku="" aria-label="Add to cart: &ldquo;EDEN ROBOTICS Mimi Companion Robot&rdquo;" aria-describedby="" rel="nofollow">Add to cart<span class="kadence-svg-iconset svg-baseline"><svg aria-hidden="true" class="kadence-svg-icon kadence-arrow-right-alt-svg" fill="currentColor" version="1.1" xmlns="http://www.w3.org/2000/svg" width="27" height="28" viewBox="0 0 27 28"><title>Continue</title><path d="M27 13.953c0 0.141-0.063 0.281-0.156 0.375l-6 5.531c-0.156 0.141-0.359 0.172-0.547 0.094-0.172-0.078-0.297-0.25-0.297-0.453v-3.5h-19.5c-0.281 0-0.5-0.219-0.5-0.5v-3c0-0.281 0.219-0.5 0.5-0.5h19.5v-3.5c0-0.203 0.109-0.375 0.297-0.453s0.391-0.047 0.547 0.078l6 5.469c0.094 0.094 0.156 0.219 0.156 0.359v0z"></path>
+				</svg></span><span class="kadence-svg-iconset svg-baseline"><svg class="kadence-svg-icon kadence-spinner-svg" fill="currentColor" version="1.1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><title>Loading</title><path d="M16 6h-6l2.243-2.243c-1.133-1.133-2.64-1.757-4.243-1.757s-3.109 0.624-4.243 1.757c-1.133 1.133-1.757 2.64-1.757 4.243s0.624 3.109 1.757 4.243c1.133 1.133 2.64 1.757 4.243 1.757s3.109-0.624 4.243-1.757c0.095-0.095 0.185-0.192 0.273-0.292l1.505 1.317c-1.466 1.674-3.62 2.732-6.020 2.732-4.418 0-8-3.582-8-8s3.582-8 8-8c2.209 0 4.209 0.896 5.656 2.344l2.343-2.344v6z"></path>
+				</svg></span><span class="kadence-svg-iconset svg-baseline"><svg class="kadence-svg-icon kadence-check-svg" fill="currentColor" version="1.1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><title>Done</title><path d="M14 2.5l-8.5 8.5-3.5-3.5-1.5 1.5 5 5 10-10z"></path>
+				</svg></span></a></div></div></li>
+
+			
+					<li class="entry content-bg loop-entry product type-product post-100 status-publish instock product_cat-eden-robotics-companion-robots has-post-thumbnail shipping-taxable purchasable product-type-simple">
+	<a href="https://edenrobotinnovation.com/shop/eden-robotics-harley-companion-robot/" class="woocommerce-loop-image-link woocommerce-LoopProduct-link woocommerce-loop-product__link"><img width="300" height="300" src="https://edenrobotinnovation.com/wp-content/uploads/2023/06/er-harley03-300x300.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="" decoding="async" loading="lazy" srcset="https://edenrobotinnovation.com/wp-content/uploads/2023/06/er-harley03-300x300.jpg 300w, https://edenrobotinnovation.com/wp-content/uploads/2023/06/er-harley03-100x100.jpg 100w, https://edenrobotinnovation.com/wp-content/uploads/2023/06/er-harley03-600x600.jpg 600w, https://edenrobotinnovation.com/wp-content/uploads/2023/06/er-harley03-150x150.jpg 150w, https://edenrobotinnovation.com/wp-content/uploads/2023/06/er-harley03.jpg 700w" sizes="(max-width: 300px) 100vw, 300px" /></a><div class="product-details content-bg entry-content-wrap"><h2 class="woocommerce-loop-product__title"><a href="https://edenrobotinnovation.com/shop/eden-robotics-harley-companion-robot/" class="woocommerce-LoopProduct-link-title woocommerce-loop-product__title_ink">EDEN ROBOTICS Harley Companion Robot</a></h2>
+	<span class="price"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">&#36;</span>12,249.99</bdi></span></span>
+<div class="product-action-wrap"><a href="?add-to-cart=100" data-quantity="1" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-product_id="100" data-product_sku="" aria-label="Add to cart: &ldquo;EDEN ROBOTICS Harley Companion Robot&rdquo;" aria-describedby="" rel="nofollow">Add to cart<span class="kadence-svg-iconset svg-baseline"><svg aria-hidden="true" class="kadence-svg-icon kadence-arrow-right-alt-svg" fill="currentColor" version="1.1" xmlns="http://www.w3.org/2000/svg" width="27" height="28" viewBox="0 0 27 28"><title>Continue</title><path d="M27 13.953c0 0.141-0.063 0.281-0.156 0.375l-6 5.531c-0.156 0.141-0.359 0.172-0.547 0.094-0.172-0.078-0.297-0.25-0.297-0.453v-3.5h-19.5c-0.281 0-0.5-0.219-0.5-0.5v-3c0-0.281 0.219-0.5 0.5-0.5h19.5v-3.5c0-0.203 0.109-0.375 0.297-0.453s0.391-0.047 0.547 0.078l6 5.469c0.094 0.094 0.156 0.219 0.156 0.359v0z"></path>
+				</svg></span><span class="kadence-svg-iconset svg-baseline"><svg class="kadence-svg-icon kadence-spinner-svg" fill="currentColor" version="1.1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><title>Loading</title><path d="M16 6h-6l2.243-2.243c-1.133-1.133-2.64-1.757-4.243-1.757s-3.109 0.624-4.243 1.757c-1.133 1.133-1.757 2.64-1.757 4.243s0.624 3.109 1.757 4.243c1.133 1.133 2.64 1.757 4.243 1.757s3.109-0.624 4.243-1.757c0.095-0.095 0.185-0.192 0.273-0.292l1.505 1.317c-1.466 1.674-3.62 2.732-6.020 2.732-4.418 0-8-3.582-8-8s3.582-8 8-8c2.209 0 4.209 0.896 5.656 2.344l2.343-2.344v6z"></path>
+				</svg></span><span class="kadence-svg-iconset svg-baseline"><svg class="kadence-svg-icon kadence-check-svg" fill="currentColor" version="1.1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><title>Done</title><path d="M14 2.5l-8.5 8.5-3.5-3.5-1.5 1.5 5 5 10-10z"></path>
+				</svg></span></a></div></div></li>
+
+			
+					<li class="entry content-bg loop-entry product type-product post-106 status-publish last instock product_cat-eden-robotics-companion-robots has-post-thumbnail featured shipping-taxable purchasable product-type-simple">
+	<a href="https://edenrobotinnovation.com/shop/eden-robotics-jeni-companion-robot/" class="woocommerce-loop-image-link woocommerce-LoopProduct-link woocommerce-loop-product__link"><img width="300" height="300" src="https://edenrobotinnovation.com/wp-content/uploads/2023/06/er-jeni02-300x300.jpg" class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="" decoding="async" loading="lazy" srcset="https://edenrobotinnovation.com/wp-content/uploads/2023/06/er-jeni02-300x300.jpg 300w, https://edenrobotinnovation.com/wp-content/uploads/2023/06/er-jeni02-100x100.jpg 100w, https://edenrobotinnovation.com/wp-content/uploads/2023/06/er-jeni02-600x600.jpg 600w, https://edenrobotinnovation.com/wp-content/uploads/2023/06/er-jeni02-150x150.jpg 150w, https://edenrobotinnovation.com/wp-content/uploads/2023/06/er-jeni02.jpg 700w" sizes="(max-width: 300px) 100vw, 300px" /></a><div class="product-details content-bg entry-content-wrap"><h2 class="woocommerce-loop-product__title"><a href="https://edenrobotinnovation.com/shop/eden-robotics-jeni-companion-robot/" class="woocommerce-LoopProduct-link-title woocommerce-loop-product__title_ink">EDEN ROBOTICS Jeni Companion Robot</a></h2>
+	<span class="price"><span class="woocommerce-Price-amount amount"><bdi><span class="woocommerce-Price-currencySymbol">&#36;</span>10,009.99</bdi></span></span>
+<div class="product-action-wrap"><a href="?add-to-cart=106" data-quantity="1" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-product_id="106" data-product_sku="" aria-label="Add to cart: &ldquo;EDEN ROBOTICS Jeni Companion Robot&rdquo;" aria-describedby="" rel="nofollow">Add to cart<span class="kadence-svg-iconset svg-baseline"><svg aria-hidden="true" class="kadence-svg-icon kadence-arrow-right-alt-svg" fill="currentColor" version="1.1" xmlns="http://www.w3.org/2000/svg" width="27" height="28" viewBox="0 0 27 28"><title>Continue</title><path d="M27 13.953c0 0.141-0.063 0.281-0.156 0.375l-6 5.531c-0.156 0.141-0.359 0.172-0.547 0.094-0.172-0.078-0.297-0.25-0.297-0.453v-3.5h-19.5c-0.281 0-0.5-0.219-0.5-0.5v-3c0-0.281 0.219-0.5 0.5-0.5h19.5v-3.5c0-0.203 0.109-0.375 0.297-0.453s0.391-0.047 0.547 0.078l6 5.469c0.094 0.094 0.156 0.219 0.156 0.359v0z"></path>
+				</svg></span><span class="kadence-svg-iconset svg-baseline"><svg class="kadence-svg-icon kadence-spinner-svg" fill="currentColor" version="1.1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><title>Loading</title><path d="M16 6h-6l2.243-2.243c-1.133-1.133-2.64-1.757-4.243-1.757s-3.109 0.624-4.243 1.757c-1.133 1.133-1.757 2.64-1.757 4.243s0.624 3.109 1.757 4.243c1.133 1.133 2.64 1.757 4.243 1.757s3.109-0.624 4.243-1.757c0.095-0.095 0.185-0.192 0.273-0.292l1.505 1.317c-1.466 1.674-3.62 2.732-6.020 2.732-4.418 0-8-3.582-8-8s3.582-8 8-8c2.209 0 4.209 0.896 5.656 2.344l2.343-2.344v6z"></path>
+				</svg></span><span class="kadence-svg-iconset svg-baseline"><svg class="kadence-svg-icon kadence-check-svg" fill="currentColor" version="1.1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><title>Done</title><path d="M14 2.5l-8.5 8.5-3.5-3.5-1.5 1.5 5 5 10-10z"></path>
+				</svg></span></a></div></div></li>
+
+			
+		</ul>
+
+	</section>
+	</div>
+
+
+		
+	</main></div></div>
+	
+	</div><!-- #inner-wrap -->
+	<footer id="colophon" class="site-footer" role="contentinfo">
+	<div class="site-footer-wrap">
+		<div class="site-middle-footer-wrap site-footer-row-container site-footer-focus-item site-footer-row-layout-standard site-footer-row-tablet-layout-default site-footer-row-mobile-layout-default" data-section="kadence_customizer_footer_middle">
+	<div class="site-footer-row-container-inner">
+				<div class="site-container">
+			<div class="site-middle-footer-inner-wrap site-footer-row site-footer-row-columns-3 site-footer-row-column-layout-equal site-footer-row-tablet-column-layout-default site-footer-row-mobile-column-layout-row ft-ro-dir-row ft-ro-collapse-normal ft-ro-t-dir-default ft-ro-m-dir-default ft-ro-lstyle-plain">
+									<div class="site-footer-middle-section-1 site-footer-section footer-section-inner-items-1">
+						<div class="footer-widget-area widget-area site-footer-focus-item footer-widget1 content-align-default content-tablet-align-default content-mobile-align-default content-valign-default content-tablet-valign-default content-mobile-valign-default" data-section="sidebar-widgets-footer1">
+	<div class="footer-widget-area-inner site-info-inner">
+		<section id="block-8" class="widget widget_block widget_media_image">
+<figure class="wp-block-image size-full"><img loading="lazy" decoding="async" width="300" height="75" src="https://edenrobotinnovation.com/wp-content/uploads/2023/06/Logo300.png" alt="Eden Robot Innovation" class="wp-image-609"/></figure>
+</section><section id="block-12" class="widget widget_block widget_text">
+<p><strong>Address:</strong> Industrial Dr, Hampton, New Hampshire, United States</p>
+</section><section id="block-13" class="widget widget_block widget_text">
+<p><strong>Phone:</strong> +1 (213) 973-8297</p>
+</section><section id="block-11" class="widget widget_block widget_text">
+<p><strong>Email:</strong> support@edenrobotinnovation.com</p>
+</section>	</div>
+</div><!-- .footer-widget1 -->
+					</div>
+										<div class="site-footer-middle-section-2 site-footer-section footer-section-inner-items-1">
+						<div class="footer-widget-area widget-area site-footer-focus-item footer-widget2 content-align-default content-tablet-align-default content-mobile-align-default content-valign-default content-tablet-valign-default content-mobile-valign-default" data-section="sidebar-widgets-footer2">
+	<div class="footer-widget-area-inner site-info-inner">
+		<section id="nav_menu-3" class="widget widget_nav_menu"><h2 class="widget-title">Robot Types</h2><div class="menu-robot-types-container"><ul id="menu-robot-types" class="menu"><li id="menu-item-617" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat current-product-ancestor menu-item-617"><a href="https://edenrobotinnovation.com/product-category/companion-robot-for-adults/">companion robot</a></li>
+<li id="menu-item-618" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-618"><a href="https://edenrobotinnovation.com/product-category/humanoid-robots/">Humanoid Robots</a></li>
+<li id="menu-item-619" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-619"><a href="https://edenrobotinnovation.com/product-category/robot-pets/">Robot Pets</a></li>
+<li id="menu-item-620" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-620"><a href="https://edenrobotinnovation.com/product-category/utility-robots-for-sale/">Utility Robots</a></li>
+</ul></div></section>	</div>
+</div><!-- .footer-widget2 -->
+					</div>
+										<div class="site-footer-middle-section-3 site-footer-section footer-section-inner-items-1">
+						<div class="footer-widget-area widget-area site-footer-focus-item footer-widget3 content-align-default content-tablet-align-default content-mobile-align-default content-valign-default content-tablet-valign-default content-mobile-valign-default" data-section="sidebar-widgets-footer3">
+	<div class="footer-widget-area-inner site-info-inner">
+		<section id="nav_menu-4" class="widget widget_nav_menu"><h2 class="widget-title">Quick Links</h2><div class="menu-quick-links-container"><ul id="menu-quick-links" class="menu"><li id="menu-item-621" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-621"><a href="https://edenrobotinnovation.com/">Home</a></li>
+<li id="menu-item-623" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-623"><a href="https://edenrobotinnovation.com/about-us/">About Us</a></li>
+<li id="menu-item-624" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-624"><a href="https://edenrobotinnovation.com/contact-us/">Contact Us</a></li>
+<li id="menu-item-626" class="menu-item menu-item-type-post_type menu-item-object-page current_page_parent menu-item-626"><a href="https://edenrobotinnovation.com/robotics-engineering/">Shop</a></li>
+<li id="menu-item-625" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-625"><a href="https://edenrobotinnovation.com/privacy-and-cookie-policy/">Privacy and Cookie Policy</a></li>
+<li id="menu-item-627" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-627"><a href="https://edenrobotinnovation.com/terms-conditions/">Terms &#038; Conditions</a></li>
+</ul></div></section>	</div>
+</div><!-- .footer-widget3 -->
+					</div>
+								</div>
+		</div>
+	</div>
+</div>
+<div class="site-bottom-footer-wrap site-footer-row-container site-footer-focus-item site-footer-row-layout-standard site-footer-row-tablet-layout-default site-footer-row-mobile-layout-default" data-section="kadence_customizer_footer_bottom">
+	<div class="site-footer-row-container-inner">
+				<div class="site-container">
+			<div class="site-bottom-footer-inner-wrap site-footer-row site-footer-row-columns-1 site-footer-row-column-layout-row site-footer-row-tablet-column-layout-default site-footer-row-mobile-column-layout-row ft-ro-dir-row ft-ro-collapse-normal ft-ro-t-dir-default ft-ro-m-dir-default ft-ro-lstyle-plain">
+									<div class="site-footer-bottom-section-1 site-footer-section footer-section-inner-items-1">
+						
+<div class="footer-widget-area site-info site-footer-focus-item content-align-default content-tablet-align-default content-mobile-align-default content-valign-default content-tablet-valign-default content-mobile-valign-default" data-section="kadence_customizer_footer_html">
+	<div class="footer-widget-area-inner site-info-inner">
+		<div class="footer-html inner-link-style-normal"><div class="footer-html-inner"><p>&copy; 2023 Eden Robot Innovation</p>
+</div></div>	</div>
+</div><!-- .site-info -->
+					</div>
+								</div>
+		</div>
+	</div>
+</div>
+	</div>
+</footer><!-- #colophon -->
+
+</div><!-- #wrapper -->
+
+			<script>document.documentElement.style.setProperty('--scrollbar-offset', window.innerWidth - document.documentElement.clientWidth + 'px' );</script>
+			<script type="text/javascript">
+            var _smartsupp = _smartsupp || {};
+            _smartsupp.key = '781f014eec4532a57c24fd443a02caba6de0e8e5';
+_smartsupp.cookieDomain = 'edenrobotinnovation.com';
+_smartsupp.sitePlatform = 'WP 6.4.2';
+window.smartsupp||(function(d) {
+                var s,c,o=smartsupp=function(){ o._.push(arguments)};o._=[];
+                s=d.getElementsByTagName('script')[0];c=d.createElement('script');
+                c.type='text/javascript';c.charset='utf-8';c.async=true;
+                c.src='//www.smartsuppchat.com/loader.js';s.parentNode.insertBefore(c,s);
+            })(document);
+            </script><script type="application/ld+json">{"@context":"https:\/\/schema.org\/","@type":"Product","@id":"https:\/\/edenrobotinnovation.com\/shop\/eden-robotics-foxi-companion-robot\/#product","name":"EDEN ROBOTICS Foxi Companion Robot","url":"https:\/\/edenrobotinnovation.com\/shop\/eden-robotics-foxi-companion-robot\/","description":"Companion robot Foxi is the next technological frontier in personal robotics. She can be your own household maid, lover, companion, and anything else you want her to be.","image":"https:\/\/edenrobotinnovation.com\/wp-content\/uploads\/2023\/06\/er-foxi01.jpg","sku":104,"offers":[{"@type":"Offer","price":"13449.99","priceValidUntil":"2024-12-31","priceSpecification":{"price":"13449.99","priceCurrency":"USD","valueAddedTaxIncluded":"false"},"priceCurrency":"USD","availability":"http:\/\/schema.org\/InStock","url":"https:\/\/edenrobotinnovation.com\/shop\/eden-robotics-foxi-companion-robot\/","seller":{"@type":"Organization","name":"Eden Robot Innovation","url":"https:\/\/edenrobotinnovation.com"}}]}</script>
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+	<div class="pswp__bg"></div>
+	<div class="pswp__scroll-wrap">
+		<div class="pswp__container">
+			<div class="pswp__item"></div>
+			<div class="pswp__item"></div>
+			<div class="pswp__item"></div>
+		</div>
+		<div class="pswp__ui pswp__ui--hidden">
+			<div class="pswp__top-bar">
+				<div class="pswp__counter"></div>
+				<button class="pswp__button pswp__button--close" aria-label="Close (Esc)"></button>
+				<button class="pswp__button pswp__button--share" aria-label="Share"></button>
+				<button class="pswp__button pswp__button--fs" aria-label="Toggle fullscreen"></button>
+				<button class="pswp__button pswp__button--zoom" aria-label="Zoom in/out"></button>
+				<div class="pswp__preloader">
+					<div class="pswp__preloader__icn">
+						<div class="pswp__preloader__cut">
+							<div class="pswp__preloader__donut"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+				<div class="pswp__share-tooltip"></div>
+			</div>
+			<button class="pswp__button pswp__button--arrow--left" aria-label="Previous (arrow left)"></button>
+			<button class="pswp__button pswp__button--arrow--right" aria-label="Next (arrow right)"></button>
+			<div class="pswp__caption">
+				<div class="pswp__caption__center"></div>
+			</div>
+		</div>
+	</div>
+</div>
+	<script type="text/javascript">
+		(function () {
+			var c = document.body.className;
+			c = c.replace(/woocommerce-no-js/, 'woocommerce-js');
+			document.body.className = c;
+		})();
+	</script>
+		<div id="mobile-drawer" class="popup-drawer popup-drawer-layout-sidepanel popup-drawer-animation-fade popup-drawer-side-right" data-drawer-target-string="#mobile-drawer"
+			>
+		<div class="drawer-overlay" data-drawer-target-string="#mobile-drawer"></div>
+		<div class="drawer-inner">
+						<div class="drawer-header">
+				<button class="menu-toggle-close drawer-toggle" aria-label="Close menu"  data-toggle-target="#mobile-drawer" data-toggle-body-class="showing-popup-drawer-from-right" aria-expanded="false" data-set-focus=".menu-toggle-open"
+							>
+					<span class="toggle-close-bar"></span>
+					<span class="toggle-close-bar"></span>
+				</button>
+			</div>
+			<div class="drawer-content mobile-drawer-content content-align-left content-valign-top">
+								<div class="site-header-item site-header-focus-item site-header-item-mobile-navigation mobile-navigation-layout-stretch-false" data-section="kadence_customizer_mobile_navigation">
+		<nav id="mobile-site-navigation" class="mobile-navigation drawer-navigation drawer-navigation-parent-toggle-false" role="navigation" aria-label="Primary Mobile Navigation">
+				<div class="mobile-menu-container drawer-menu-container">
+			<ul id="mobile-menu" class="menu has-collapse-sub-nav"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-582"><div class="drawer-nav-drop-wrap"><a href="#">Robots</a><button class="drawer-sub-toggle" data-toggle-duration="10" data-toggle-target="#mobile-menu .menu-item-582 &gt; .sub-menu" aria-expanded="false"><span class="screen-reader-text">Toggle child menu</span><span class="kadence-svg-iconset"><svg aria-hidden="true" class="kadence-svg-icon kadence-arrow-down-svg" fill="currentColor" version="1.1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><title>Expand</title><path d="M5.293 9.707l6 6c0.391 0.391 1.024 0.391 1.414 0l6-6c0.391-0.391 0.391-1.024 0-1.414s-1.024-0.391-1.414 0l-5.293 5.293-5.293-5.293c-0.391-0.391-1.024-0.391-1.414 0s-0.391 1.024 0 1.414z"></path>
+				</svg></span></button></div>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-583"><a href="https://edenrobotinnovation.com/product-category/ai-tech/">AI-Tech</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-584"><a href="https://edenrobotinnovation.com/product-category/eden-robotics/">Eden Robotics</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-586"><a href="https://edenrobotinnovation.com/product-category/irobot/">iRobot</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-587"><a href="https://edenrobotinnovation.com/product-category/joy-for-all/">Joy For All</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-589"><a href="https://edenrobotinnovation.com/product-category/sanbot-robotics/">Sanbot Robotics</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-590"><a href="https://edenrobotinnovation.com/product-category/softbank-robotics/">SoftBank Robotics</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-591"><a href="https://edenrobotinnovation.com/product-category/ubtech-robotics/">UBTech Robotics</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-585"><a href="https://edenrobotinnovation.com/product-category/humanoid-robots/">Humanoid Robots</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-592"><a href="https://edenrobotinnovation.com/product-category/utility-robots-for-sale/">Utility Robots</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-588"><a href="https://edenrobotinnovation.com/product-category/robot-pets/">Robot Pets</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-product_cat current-product-ancestor menu-item-has-children menu-item-593"><div class="drawer-nav-drop-wrap"><a href="https://edenrobotinnovation.com/product-category/companion-robot-for-adults/">companion robot</a><button class="drawer-sub-toggle" data-toggle-duration="10" data-toggle-target="#mobile-menu .menu-item-593 &gt; .sub-menu" aria-expanded="false"><span class="screen-reader-text">Toggle child menu</span><span class="kadence-svg-iconset"><svg aria-hidden="true" class="kadence-svg-icon kadence-arrow-down-svg" fill="currentColor" version="1.1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><title>Expand</title><path d="M5.293 9.707l6 6c0.391 0.391 1.024 0.391 1.414 0l6-6c0.391-0.391 0.391-1.024 0-1.414s-1.024-0.391-1.414 0l-5.293 5.293-5.293-5.293c-0.391-0.391-1.024-0.391-1.414 0s-0.391 1.024 0 1.414z"></path>
+				</svg></span></button></div>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-594"><a href="https://edenrobotinnovation.com/product-category/companion-robot-for-adults/ai-tech-companion-robots/">AI-Tech</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-product_cat current-product-ancestor current-menu-parent current-product-parent menu-item-595"><a href="https://edenrobotinnovation.com/product-category/companion-robot-for-adults/eden-robotics-companion-robots/">Eden Robotics</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-596"><a href="https://edenrobotinnovation.com/product-category/companion-robot-for-adults/realdoll-companion-robot/">RealDoll</a></li>
+</ul>
+</li>
+</ul>		</div>
+	</nav><!-- #site-navigation -->
+	</div><!-- data-section="mobile_navigation" -->
+							</div>
+		</div>
+	</div>
+	<script src="https://edenrobotinnovation.com/wp-content/themes/kadence/assets/js/product-cls.min.js?ver=1.1.49" id="kadence-product-cls-js"></script>
+<script src="https://edenrobotinnovation.com/wp-content/plugins/contact-form-7/includes/swv/js/index.js?ver=5.8.4" id="swv-js"></script>
+<script id="contact-form-7-js-extra">
+var wpcf7 = {"api":{"root":"https:\/\/edenrobotinnovation.com\/wp-json\/","namespace":"contact-form-7\/v1"},"cached":"1"};
+</script>
+<script src="https://edenrobotinnovation.com/wp-content/plugins/contact-form-7/includes/js/index.js?ver=5.8.4" id="contact-form-7-js"></script>
+<script src="https://edenrobotinnovation.com/wp-includes/js/comment-reply.min.js?ver=e6002d03184d4600d262284f5c87daa6" id="comment-reply-js" async data-wp-strategy="async"></script>
+<script id="kadence-navigation-js-extra">
+var kadenceConfig = {"screenReader":{"expand":"Child menu","expandOf":"Child menu of","collapse":"Child menu","collapseOf":"Child menu of"},"breakPoints":{"desktop":"1024","tablet":768},"scrollOffset":"0"};
+</script>
+<script src="https://edenrobotinnovation.com/wp-content/themes/kadence/assets/js/navigation.min.js?ver=1.1.49" id="kadence-navigation-js" async></script>
+<script id="wc-cart-fragments-js-extra">
+var wc_cart_fragments_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/?wc-ajax=%%endpoint%%","cart_hash_key":"wc_cart_hash_08371f7dc3e4d319fdb9bebfc79cf076","fragment_name":"wc_fragments_08371f7dc3e4d319fdb9bebfc79cf076","request_timeout":"5000"};
+</script>
+<script src="https://edenrobotinnovation.com/wp-content/plugins/woocommerce/assets/js/frontend/cart-fragments.min.js?ver=8.4.0" id="wc-cart-fragments-js" defer data-wp-strategy="defer"></script>
+	<div id="search-drawer" class="popup-drawer popup-drawer-layout-fullwidth" data-drawer-target-string="#search-drawer"
+			>
+		<div class="drawer-overlay" data-drawer-target-string="#search-drawer"></div>
+		<div class="drawer-inner">
+			<div class="drawer-header">
+				<button class="search-toggle-close drawer-toggle" aria-label="Close search"  data-toggle-target="#search-drawer" data-toggle-body-class="showing-popup-drawer-from-full" aria-expanded="false" data-set-focus=".search-toggle-open"
+							>
+					<span class="kadence-svg-iconset"><svg class="kadence-svg-icon kadence-close-svg" fill="currentColor" version="1.1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><title>Toggle Menu Close</title><path d="M5.293 6.707l5.293 5.293-5.293 5.293c-0.391 0.391-0.391 1.024 0 1.414s1.024 0.391 1.414 0l5.293-5.293 5.293 5.293c0.391 0.391 1.024 0.391 1.414 0s0.391-1.024 0-1.414l-5.293-5.293 5.293-5.293c0.391-0.391 0.391-1.024 0-1.414s-1.024-0.391-1.414 0l-5.293 5.293-5.293-5.293c-0.391-0.391-1.024-0.391-1.414 0s-0.391 1.024 0 1.414z"></path>
+				</svg></span>				</button>
+			</div>
+			<div class="drawer-content">
+				<form role="search" method="get" class="search-form" action="https://edenrobotinnovation.com/">
+				<label>
+					<span class="screen-reader-text">Search for:</span>
+					<input type="search" class="search-field" placeholder="Search &hellip;" value="" name="s" />
+				</label>
+				<input type="submit" class="search-submit" value="Search" />
+			<div class="kadence-search-icon-wrap"><span class="kadence-svg-iconset"><svg aria-hidden="true" class="kadence-svg-icon kadence-search-svg" fill="currentColor" version="1.1" xmlns="http://www.w3.org/2000/svg" width="26" height="28" viewBox="0 0 26 28"><title>Search</title><path d="M18 13c0-3.859-3.141-7-7-7s-7 3.141-7 7 3.141 7 7 7 7-3.141 7-7zM26 26c0 1.094-0.906 2-2 2-0.531 0-1.047-0.219-1.406-0.594l-5.359-5.344c-1.828 1.266-4.016 1.937-6.234 1.937-6.078 0-11-4.922-11-11s4.922-11 11-11 11 4.922 11 11c0 2.219-0.672 4.406-1.937 6.234l5.359 5.359c0.359 0.359 0.578 0.875 0.578 1.406z"></path>
+				</svg></span></div></form>			</div>
+		</div>
+	</div>
+	</body>
+</html>
+
+<!-- Cache served by breeze CACHE - Last modified: Mon, 18 Dec 2023 17:17:33 GMT -->
